@@ -3,15 +3,11 @@ from unittest import TestCase
 from nose.tools import raises
 import os, subprocess, json
 import tempfile
-from .utils import captured_output
 
 
 """
-Classes to test emm.Keymaker
+Classes to test emm.GithubKeymaker
 """
-
-
-thisdir = os.path.abspath(os.path.dirname(__file__))
 
 
 class TestGithubKeymaker(TestCase):
@@ -22,7 +18,7 @@ class TestGithubKeymaker(TestCase):
     """
     token_var = 'client_id'
     secret_var = 'client_secret'
-    keys_dir = tempfile.gettempdir()
+    keys_dir = tempfile.gettempdir() # gets an already-existing dir
     keys_json = "apikeys.json"
 
     @classmethod
@@ -30,13 +26,12 @@ class TestGithubKeymaker(TestCase):
         """
         Set up JSON file for JSON key-loading method
         """
-        self.api_keys = os.path.join(keys_dir, keys_json)
-        subprocess.call(['mkdir','-p',keys_dir])
+        self.keypath = os.path.join(self.keys_dir, self.keys_json)
 
         d = {}
-        d[self.ct.lower()] = 'AAAAA'
-        d[self.cts.lower()] = 'BBBBB'
-        with open(self.api_keys,'w') as f:
+        d[self.token_var.lower()] = 'AAAAA'
+        d[self.secret_var.lower()] = 'BBBBB'
+        with open(self.keypath,'w') as f:
             json.dump(d,f)
 
 
@@ -44,39 +39,36 @@ class TestGithubKeymaker(TestCase):
         """
         Running a smoke test for the GithubKeymaker class
         """
-        bk = bmm.BoringOAuthKeymaker(token=self.token_var,
-                                     secret=self.secret_var)
+        bk = emm.GithubKeymaker()
 
 
     def test_githubkeymaker_apikeys_env(self):
         """
         Testing ability to create single key using consumer token from environment vars
         """
-        bk = bmm.BoringOAuthKeymaker(token=self.token_var,
-                                     secret=self.secret_var)
+        bk = emm.GithubKeymaker()
 
         # Set application API keys
         os.environ['CLIENT_ID'] = 'CCCCC'
-        os.environ['CLIENT_TOKEN'] = 'DDDDD'
+        os.environ['CLIENT_SECRET'] = 'DDDDD'
 
-        keymaker.set_apikeys_env()
+        bk.set_apikeys_env()
 
         self.assertEqual(bk.credentials[self.token_var.lower()], 'CCCCC')
         self.assertEqual(bk.credentials[self.secret_var.lower()],'DDDDD')
 
         # Clean up
         os.environ['CLIENT_ID'] = ''
-        os.environ['CLIENT_TOKEN'] = ''
+        os.environ['CLIENT_SECRET'] = ''
 
 
     def test_githubkeymaker_apikeys_file(self):
         """
         Testing ability to create single key using consumer token/secret from JSON file
         """
-        bk = bmm.BoringOAuthKeymaker(token=self.token_var,
-                                     secret=self.secret_var)
+        bk = emm.GithubKeymaker()
 
-        bk.set_apikeys_file(self.api_keys)
+        bk.set_apikeys_file(self.keypath)
 
         # Note that we hard-code these key values in the setup method above...
         self.assertEqual(bk.credentials[self.token_var.lower()], 'AAAAA')
@@ -87,11 +79,10 @@ class TestGithubKeymaker(TestCase):
         """
         Testing ability to create single key using consumer token/secret from dictionary
         """
-        bk = bmm.BoringOAuthKeymaker(token=self.token_var,
-                                     secret=self.secret_var)
+        bk = emm.GithubKeymaker()
 
         # Set application API keys
-        keymaker.set_apikeys_dict({ 
+        bk.set_apikeys_dict({ 
             self.token_var.lower() : 'EEEEE',
             self.secret_var.lower() : 'FFFFF'
         })
@@ -102,8 +93,6 @@ class TestGithubKeymaker(TestCase):
 
     @classmethod
     def tearDownClass(self):
-        # Remove the keys directory we created
-        subprocess.call(['rm','-rf',self.keys_dir])
-
-
+        # remove key
+        subprocess.call(['rm','-rf',self.keypath])
 
