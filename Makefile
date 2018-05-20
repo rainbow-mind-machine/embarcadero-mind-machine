@@ -2,6 +2,8 @@ BMM_GH="git@github.com:rainbow-mind-machine/embarcadero-mind-machine.git"
 BMM_CMR="ssh://git@git.charlesreid1.com:222/bots/embarcadero-mind-machine.git"
 MKM_CMR="ssh://git@git.charlesreid1.com:222/charlesreid1/mkdocs-material.git"
 
+default: 
+
 initialize: site mkdocs_material cmr_remote
 
 deploy: site
