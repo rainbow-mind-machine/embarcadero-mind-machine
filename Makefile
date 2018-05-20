@@ -20,5 +20,8 @@ site:
 cmr_remote:
 	git remote add cmr $(BMM_CMR)
 
+submodule_init:
+	git submodule update --init
+
 test:
 	nosetests -v
