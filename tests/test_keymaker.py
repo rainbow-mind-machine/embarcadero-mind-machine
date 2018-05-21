@@ -10,7 +10,7 @@ Classes to test emm.GithubKeymaker
 """
 
 
-class TestGithubKeymaker(TestCase):
+class TestGithubKeymaker_init(TestCase):
     """
     This currently tests:
     - constructor 
@@ -39,23 +39,23 @@ class TestGithubKeymaker(TestCase):
         """
         Running a smoke test for the GithubKeymaker class
         """
-        bk = emm.GithubKeymaker()
+        gk = emm.GithubKeymaker()
 
 
     def test_githubkeymaker_apikeys_env(self):
         """
         Testing ability to create single key using consumer token from environment vars
         """
-        bk = emm.GithubKeymaker()
+        gk = emm.GithubKeymaker()
 
         # Set application API keys
         os.environ['CLIENT_ID'] = 'CCCCC'
         os.environ['CLIENT_SECRET'] = 'DDDDD'
 
-        bk.set_apikeys_env()
+        gk.set_apikeys_env()
 
-        self.assertEqual(bk.credentials[self.token_var.lower()], 'CCCCC')
-        self.assertEqual(bk.credentials[self.secret_var.lower()],'DDDDD')
+        self.assertEqual(gk.credentials[self.token_var.lower()], 'CCCCC')
+        self.assertEqual(gk.credentials[self.secret_var.lower()],'DDDDD')
 
         # Clean up
         os.environ['CLIENT_ID'] = ''
@@ -66,33 +66,52 @@ class TestGithubKeymaker(TestCase):
         """
         Testing ability to create single key using consumer token/secret from JSON file
         """
-        bk = emm.GithubKeymaker()
+        gk = emm.GithubKeymaker()
 
-        bk.set_apikeys_file(self.keypath)
+        gk.set_apikeys_file(self.keypath)
 
         # Note that we hard-code these key values in the setup method above...
-        self.assertEqual(bk.credentials[self.token_var.lower()], 'AAAAA')
-        self.assertEqual(bk.credentials[self.secret_var.lower()],'BBBBB')
+        self.assertEqual(gk.credentials[self.token_var.lower()], 'AAAAA')
+        self.assertEqual(gk.credentials[self.secret_var.lower()],'BBBBB')
 
 
     def test_githubkeymaker_apikeys_dict(self):
         """
         Testing ability to create single key using consumer token/secret from dictionary
         """
-        bk = emm.GithubKeymaker()
+        gk = emm.GithubKeymaker()
 
         # Set application API keys
-        bk.set_apikeys_dict({ 
+        gk.set_apikeys_dict({ 
             self.token_var.lower() : 'EEEEE',
             self.secret_var.lower() : 'FFFFF'
         })
 
-        self.assertEqual(bk.credentials[self.token_var.lower()], 'EEEEE')
-        self.assertEqual(bk.credentials[self.secret_var.lower()],'FFFFF')
+        self.assertEqual(gk.credentials[self.token_var.lower()], 'EEEEE')
+        self.assertEqual(gk.credentials[self.secret_var.lower()],'FFFFF')
 
 
     @classmethod
     def tearDownClass(self):
         # remove key
         subprocess.call(['rm','-rf',self.keypath])
+
+
+class TestGithubKeymaker_keymaking(TestCase):
+    """
+    This tests:
+    - make_a_key
+
+    You must use environment variables to set real API keys.
+    """
+    def test_make_a_key(self):
+        pass
+
+
+
+
+
+
+
+
 
