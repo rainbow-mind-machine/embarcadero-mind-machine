@@ -1,3 +1,4 @@
 __version__="2"
-from .Shepherd import *
 from .GithubKeymaker import *
+from .Shepherd import *
+from .Sheep import *

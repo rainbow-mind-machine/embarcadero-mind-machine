@@ -1,6 +1,6 @@
 import boringmindmachine as bmm
 import os, re, json
-import tempfile
+import tempfile, subprocess
 from github import Github
 from requests_oauthlib import OAuth2Session
 
@@ -197,6 +197,10 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         final_key = {}
         final_key['token'] = github.token
         final_key['client_id'] = github.client_id
+        final_key['name'] = name
+        final_key['json_target'] = json_target
+
+        import pdb; pdb.set_trace()
 
         keyloc = os.path.join(keys_out_dir,json_target)
         with open(keyloc,'w') as f:
