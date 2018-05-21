@@ -1,5 +1,5 @@
 from setuptools import setup
-from emm import __version__
+from embarcaderomindmachine import __version__
 
 setup(  name='embarcaderomindmachine',
         version=__version__,
