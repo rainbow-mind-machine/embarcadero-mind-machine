@@ -87,7 +87,7 @@ class BlameSheep(emm.Sheep):
             blame_messages = f.readlines()
 
         # Structure:
-        # Sleep for 15-45 minutes
+        # Sleep 
         # Blame someone else
 
         # Start with a little nap so we aren't racing
