@@ -1,7 +1,9 @@
 import boringmindmachine as bmm
-import os, json
+import os, re, json
 import tempfile
 from github import Github
+from requests_oauthlib import OAuth2Session
+
 
 class GithubKeymaker(bmm.BoringOAuthKeymaker):
     """
@@ -17,14 +19,45 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
     # Bulk Key Methods:
     # These all call the single key method.
 
-    def make_keys_from_dict(self, d):
+    
+    def slugify(self, value):
         """
-        Items correspond to key-value pairs in a dictionary.
-        The key is the bot name, the value is the json target file.
+        Slugify a string (make it safe for filenames)
+        """
+        slug = re.sub(r'[^\w-]', '', value).strip().lower()
+        return slug 
+
+
+    def make_keys_from_strings(self, names, keys_out_dir):
+        """
+        Just pass in a list of strings (bot names),
+        and let the Keymaker do the OAuth dance once
+        for each bot name. Simple as that.
+        """
+        for name in names:
+            bot_name = self.slugify(name)
+            json_target = bot_name + ".json"
+            self.make_a_key(name, json_target, keys_out_dir)
+
+
+    def make_keys_from_dict(self, d, keys_out_dir):
+        """
+        Pass in a list of key-value pairs, and use the keys 
+        as the bot name.
+            
+            {
+                'super_bot' :   '...arbitrary...',
+                'spider_bot' :  '...',
+                'bat_bot' :     '...'
+            }
+
+        The key is the bot name, the value is arbitrary.
+        This key-value pair is preserved in the key file.
         """
         for name in d.keys():
-            json_target = d[name]
-            make_a_key(name, json_target)
+            bot_name = self.slugify(name)
+            json_target = bot_name + ".json"
+            make_a_key(bot_name, json_target, keys_out_dir, bot_name=d[bot_name])
 
 
     # Single Key Method:
@@ -34,7 +67,8 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
                     name,
                     json_target,
                     keys_out_dir='keys/',
-                    interactive=True):
+                    interactive=True,
+                    **kwargs):
         """
         Public method to make a single key from a single item.
 
@@ -107,14 +141,7 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
             def do_GET(self):
                 url = urlparse(self.path)
 
-                ### # just save the whole chunka text
-                ### to_save = url #.query
-                ### tempf = os.path.join(tempfile.gettempdir(),callback_file)
-                ### print(type(url))
-                ### import pdb; pdb.set_trace()
-                ### with open(tempf,'w') as f:
-                ###     print(url,file=f)
-
+                # just save the whole chunka text
                 tempf = os.path.join(tempfile.gettempdir(),callback_file)
                 with open(tempf,'w') as f:
                     print(self.path,file=f)
@@ -131,10 +158,7 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         
                 return 
 
-        from requests_oauthlib import OAuth2Session
         github = OAuth2Session(self.credentials[self.token])
-
-        import pdb; pdb.set_trace()
 
         # OAuth endpoints given in the GitHub API documentation
         authorization_base_url = 'https://github.com/login/oauth/authorize'
@@ -172,9 +196,13 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
                            verify = False,
                            authorization_response = redirect_response)
 
+        # now the github object owns the token.
+        # can we get the oauth key and create our own token json?
+        # we will need to regenerate the github object later anyway.
+        import pdb; pdb.set_trace()
+        print(dir(github))
+
         # Fetch a protected resource, i.e. user profile
         r = github.get('https://api.github.com/user')
         print(r.content)
-
-
 
