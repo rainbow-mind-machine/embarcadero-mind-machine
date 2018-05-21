@@ -1,7 +1,9 @@
+import logging
+import boringmindmachine as bmm
 from github import Github
 import time, random
 
-class Sheep(object):
+class Sheep(bmm.BoringSheep):
     """
     Sheep are created by the Shepherd.
 

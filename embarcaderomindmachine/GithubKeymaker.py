@@ -158,7 +158,8 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         
                 return 
 
-        github = OAuth2Session(self.credentials[self.token])
+        scope = 'repo'
+        github = OAuth2Session(self.credentials[self.token], scope=scope)
 
         # OAuth endpoints given in the GitHub API documentation
         authorization_base_url = 'https://github.com/login/oauth/authorize'
@@ -166,8 +167,9 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
 
         # Redirect user to GitHub for authorization
         authorization_url, state = github.authorization_url(authorization_base_url)
-        print("Go to the following URL and log in to authorize this application:")
-        print("  %s\n"%(authorization_url))
+        print("\n\nAuthorizing bot %s\n\n"%(name))
+        print("Go to the following URL and log in to authorize this application:\n")
+        print("  %s\n\n"%(authorization_url))
 
         # Now run a server with the custom handler
         server_address = ('', 8000)
@@ -188,6 +190,7 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         github.fetch_token(token_url,
                            client_secret = self.credentials[self.secret],
                            verify = False,
+                           scope = scope,
                            authorization_response = redirect_response)
 
         # now the github object owns the token.
@@ -199,8 +202,6 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         final_key['client_id'] = github.client_id
         final_key['name'] = name
         final_key['json_target'] = json_target
-
-        import pdb; pdb.set_trace()
 
         keyloc = os.path.join(keys_out_dir,json_target)
         with open(keyloc,'w') as f:
