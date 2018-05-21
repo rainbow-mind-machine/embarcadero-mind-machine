@@ -167,7 +167,7 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         # Redirect user to GitHub for authorization
         authorization_url, state = github.authorization_url(authorization_base_url)
         print("Go to the following URL and log in to authorize this application:")
-        print("\t\t%s\n"%(authorization_url))
+        print("  %s\n"%(authorization_url))
 
         # Now run a server with the custom handler
         server_address = ('', 8000)
@@ -182,12 +182,6 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         BASE = 'http://localhost:8000'
         redirect_response = BASE + callback_token.strip()
 
-        print('redirect response url:')
-        print(redirect_response)
-
-        print("state:")
-        print(state)
-
         github = OAuth2Session(self.credentials[self.token], state=state)
 
         # now use the callback token to receive the oauth token
@@ -199,10 +193,22 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         # now the github object owns the token.
         # can we get the oauth key and create our own token json?
         # we will need to regenerate the github object later anyway.
-        import pdb; pdb.set_trace()
-        print(dir(github))
 
-        # Fetch a protected resource, i.e. user profile
-        r = github.get('https://api.github.com/user')
-        print(r.content)
+        final_key = {}
+        final_key['token'] = github.token
+        final_key['client_id'] = github.client_id
+
+        keyloc = os.path.join(keys_out_dir,json_target)
+        with open(keyloc,'w') as f:
+            json.dump(final_key,f)
+
+        print("\n\nCreated key for %s at %s\n\n"%(name,keyloc))
+
+        ### # Create a new OAuth2Session and test it:
+        ### del github
+        ### github2 = OAuth2Session(token=final_key['token'], client_id=final_key['client_id'])
+
+        ### # Fetch a protected resource, i.e. user profile
+        ### r = github2.get('https://api.github.com/user')
+        ### print(r.content)
 
