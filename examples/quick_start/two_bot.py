@@ -23,7 +23,7 @@ def make_keys():
 
 def run_flock():
 
-    from custom_sheep import BlameSheep, PostSheep
+    from custom_sheep import BlameSheep
 
     # Shepherd
     shepherd = emm.Shepherd(json_keys_dir='keys',
