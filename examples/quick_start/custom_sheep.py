@@ -91,7 +91,7 @@ class BlameSheep(emm.Sheep):
         # Blame someone else
 
         # Start with a little nap so we aren't racing
-        time.sleep(random.randint(1,15))
+        time.sleep(10*random.randint(4,8))
 
         # To start with, we'll hard-code the issue.
         # rainbow-mind-machine/embarcadero-mind-machine/#1
@@ -104,7 +104,8 @@ class BlameSheep(emm.Sheep):
 
         while True:
 
-            if len(list(iss.get_comments()))<=2:
+            listocomments = list(iss.get_comments())
+            if len(listocomments)<=2:
                 # The blame game has not yet kicked off.
                 # We get to start it!
                 comment = "It wasn't me, it was @{blame}".format(blame=whoarethey.login)
@@ -123,5 +124,5 @@ class BlameSheep(emm.Sheep):
             # Now sit back and take a nap
             # while the other bot does all 
             # the work.
-            time.sleep(random.randint(5,60*20))
+            time.sleep(60*random.randint(4,8))
 
