@@ -1,53 +1,6 @@
 import embarcaderomindmachine as emm
 import random, time
 
-class PostSheep(emm.Sheep):
-    def blame(self,**kwargs):
-
-        if 'org' not in kwargs and 'user' not in kwargs:
-            err = "ERROR: no 'org' or 'user' specified for BlameSheep."
-            raise Exception(err)
-
-        if 'repo' not in kwargs:
-            err = "ERROR: no 'repo' specified for BlameSheep."
-            raise Exception(err)
-        
-        if 'issueno' not in kwargs:
-            err = "ERROR: no 'issueno' specified for BlameSHeep."
-            raise Exception(err)
-
-        g = self.api
-        blame_map = {   'rainbowmindmachine' : 'embarcaderomindmachine',
-                        'embarcaderomindmachine' : 'rainbowmindmachine' 
-                    }
-
-        whoami_name = self.name
-        whoami = g.get_user(whoami_name)
-
-        whoarethey_name = blame_map[whoami_name]
-        whoarethey = g.get_user(whoarethey_name)
-
-        # To start with, we'll hard-code the issue.
-        # rainbow-mind-machine/embarcadero-mind-machine/#1
-        if 'org' in kwargs:
-            emm = g.get_organization(kwargs['org']).get_repo(kwargs['repo'])
-        elif 'user' in kwargs:
-            emm = g.get_organization(kwargs['user']).get_repo(kwargs['repo'])
-        issueno = kwargs['issueno']
-        iss = emm.get_issue(issueno)
-
-        #######################
-        ## Test various actions
-        ## (Note: problem was, I was saing 
-        ##   assignees=whoarethey instead of 
-        ##   assignees=[whoarethey] and getting
-        ##   a 403.)
-        #iss.create_reaction('confused')
-        #iss.add_to_assignees(whoarethey)
-        #iss.edit(assignees=[whoarethey])
-        #iss.create_comment("ummmm")
-
-
 
 #########################################
 # here, we define a custom Sheep class:
@@ -125,4 +78,3 @@ class BlameSheep(emm.Sheep):
             # while the other bot does all 
             # the work.
             time.sleep(60*random.randint(4,8))
-
