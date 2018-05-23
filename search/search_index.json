@@ -1,0 +1,64 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "embarcadero-mind-machine\n\u00b6\n\n\nembarcadero mind machine\n is the extensible framework for building Github bot flocks.\n\n\n\n\nembarcadero classes\n\u00b6\n\n\nhere are all of the embarcadero classes:\n\n\n\n\nGithubKeymaker\n\n\nShepherd\n\n\nSheep\n\n\n\n\n(No Lumberjack method is needed.)\n\n\nThis follows the \nmind machine\n architecuture:\n\n\n\n\nKeymaker - takes care of authentication\n\n\nShepherd - constructs each sheep with keys\n\n\nSheep - uses keys to create API instance\n\n\n\n\nembarcadero mind machine\n is a work in progress.\n\n\ndeveloper workflow\n\u00b6\n\n\nsee \nboring mind machine\n\nfor info about the infrastructure.",
+            "title": "Home"
+        },
+        {
+            "location": "/#embarcadero-mind-machine",
+            "text": "embarcadero mind machine  is the extensible framework for building Github bot flocks.",
+            "title": "embarcadero-mind-machine"
+        },
+        {
+            "location": "/#embarcadero-classes",
+            "text": "here are all of the embarcadero classes:   GithubKeymaker  Shepherd  Sheep   (No Lumberjack method is needed.)  This follows the  mind machine  architecuture:   Keymaker - takes care of authentication  Shepherd - constructs each sheep with keys  Sheep - uses keys to create API instance   embarcadero mind machine  is a work in progress.",
+            "title": "embarcadero classes"
+        },
+        {
+            "location": "/#developer-workflow",
+            "text": "see  boring mind machine \nfor info about the infrastructure.",
+            "title": "developer workflow"
+        },
+        {
+            "location": "/keymaker/",
+            "text": "Github Keymaker\n\u00b6\n\n\nembarcadero mind machine defines a Keymaker object for authenticating\nwith the Github API via OAuth.\n\n\nA Quick One-Bot Example\n\u00b6\n\n\nHere is a quick demo to authenticate a bot account\nand create a JSON key:\n\n\nexamples/quick_start/one_bot.py\n\n\nimport embarcaderomindmachine as emm\ngk = emm.GithubKeymaker()\ngk.set_apikeys_env()\ngk.make_a_key('dummy','dummy.json','/tmp/keys')\n\n\n\n\n\nThe Github Keymaker object is what walks you through\nthe OAuth2 process.\n\n\nThe \ngk.set_apikeys_env()\n method gets the application's\nconsumer ID and consumer secret from environment\nvariables (\nCONSUMER_ID\n and \nCONSUMER_SECRET\n, \nrespectively). The Keymaker also has methods to set\nthe API keys from a JSON file or from a dictionary.\n\n\nLast, we run the \nmake_a_key()\n method to actually\ngenerate the key. Note that this is not the normal\nworkflow, we usually pass a list of items to the \nKeymaker and ask it to generate one key (i.e., \nauthenticate one bot account) per item.\n\n\nIn this case, we force the Keymaker to create a \nsingle key named \"dummy\" that will be stored in\n\n/tmp/keys/dummy.json\n.\n\n\nA Two-Bot Example\n\u00b6",
+            "title": "Github Keymaker"
+        },
+        {
+            "location": "/keymaker/#github-keymaker",
+            "text": "embarcadero mind machine defines a Keymaker object for authenticating\nwith the Github API via OAuth.",
+            "title": "Github Keymaker"
+        },
+        {
+            "location": "/keymaker/#a-quick-one-bot-example",
+            "text": "Here is a quick demo to authenticate a bot account\nand create a JSON key:  examples/quick_start/one_bot.py  import embarcaderomindmachine as emm\ngk = emm.GithubKeymaker()\ngk.set_apikeys_env()\ngk.make_a_key('dummy','dummy.json','/tmp/keys')  The Github Keymaker object is what walks you through\nthe OAuth2 process.  The  gk.set_apikeys_env()  method gets the application's\nconsumer ID and consumer secret from environment\nvariables ( CONSUMER_ID  and  CONSUMER_SECRET , \nrespectively). The Keymaker also has methods to set\nthe API keys from a JSON file or from a dictionary.  Last, we run the  make_a_key()  method to actually\ngenerate the key. Note that this is not the normal\nworkflow, we usually pass a list of items to the \nKeymaker and ask it to generate one key (i.e., \nauthenticate one bot account) per item.  In this case, we force the Keymaker to create a \nsingle key named \"dummy\" that will be stored in /tmp/keys/dummy.json .",
+            "title": "A Quick One-Bot Example"
+        },
+        {
+            "location": "/keymaker/#a-two-bot-example",
+            "text": "",
+            "title": "A Two-Bot Example"
+        },
+        {
+            "location": "/shepherd/",
+            "text": "Shepherd\n\u00b6\n\n\nThe embarcadero mind machine shepherd is not much different from \nyour typical shepherd, it's basically there to initialize the \nflock by creating one sheep per key.\n\n\nAs described in boring mind machine, any mind machine that\nwants to use the boring shepherd base class should define \ntwo methods, each taking a key:\n\n\n\n\nvalidate the key\n\n\ncreate a Sheep from the key",
+            "title": "Shepherd"
+        },
+        {
+            "location": "/shepherd/#shepherd",
+            "text": "The embarcadero mind machine shepherd is not much different from \nyour typical shepherd, it's basically there to initialize the \nflock by creating one sheep per key.  As described in boring mind machine, any mind machine that\nwants to use the boring shepherd base class should define \ntwo methods, each taking a key:   validate the key  create a Sheep from the key",
+            "title": "Shepherd"
+        },
+        {
+            "location": "/sheep/",
+            "text": "Sheep\n\u00b6\n\n\nembarcadero mind machine Sheep have basic functionality described by the Github API.\n\n\nIdeas:\n\n\n\n\n\n\nping pong pair - simple ping pong on an issue (no, it's your problem. :reassign:)\n\n\n\n\n\n\nfavestar bots\n\n\n\n\nto_fave = []; faved = [];",
+            "title": "Sheep"
+        },
+        {
+            "location": "/sheep/#sheep",
+            "text": "embarcadero mind machine Sheep have basic functionality described by the Github API.  Ideas:    ping pong pair - simple ping pong on an issue (no, it's your problem. :reassign:)    favestar bots   to_fave = []; faved = [];",
+            "title": "Sheep"
+        }
+    ]
+}
