@@ -4,6 +4,8 @@
 
 <img src="img/tiny1.jpg" width="500">
 
+
+
 ## embarcadero classes
 
 here are all of the embarcadero classes:
@@ -24,6 +26,6 @@ This follows the **mind machine** architecuture:
 
 ## developer workflow
 
-see boring mind machine for info about the infrastructure.
-
+see [boring mind machine](https://pages.charlesreid1.com/boring-mind-machine)
+for info about the infrastructure.
 

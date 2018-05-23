@@ -34,8 +34,8 @@ theme:
   name: null
   custom_dir: 'mkdocs-material/material'
   palette:
-    primary: 'purple'
-    accent: 'purple'
+    primary: 'dark orange'
+    accent: 'dark orange'
   logo:
     icon: 'settings_input_component'
   font:

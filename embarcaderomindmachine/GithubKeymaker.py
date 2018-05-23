@@ -72,11 +72,6 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         """
         Public method to make a single key from a single item.
 
-        If you make bots one item at a time, 
-        you are bypassing the "normal" method of 
-        creating multiple bots at a time (bot flock),
-        so you must specify an item.
-
             name :          Label for the bot
 
             json_target :   The name of the target JSON file in which to
@@ -108,6 +103,9 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
             pass
         else:
             json_target = re.sub(ext,'.json',json_target)
+
+        # ------------8<----------------8<--------------
+        # Begin Github-Specific Section
 
         # NOTE: This assumes you have set up your webapp
         # to have a callback url of `localhost:8000`
@@ -216,4 +214,7 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         ### # Fetch a protected resource, i.e. user profile
         ### r = github2.get('https://api.github.com/user')
         ### print(r.content)
+
+        # End Github-Specific Section
+        # ------------8<----------------8<--------------
 

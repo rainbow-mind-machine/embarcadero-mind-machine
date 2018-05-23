@@ -16,6 +16,10 @@ fix_remotes:
 	git remote set-url origin $(BMM_GH)
 	git remote set-url cmr $(BMM_CMR)
 
+fix_site_remotes: 
+	cd site && git remote set-url origin $(BMM_GH)
+	cd site && git remote set-url cmr $(BMM_CMR)
+
 submodule_init:
 	git submodule update --init
 
@@ -60,7 +64,7 @@ init_gh: fix_remotes
 ###############
 # deploy_docs
 
-deploy_docs: init_site
+deploy_docs: 
 	mkdocs build
 	cd site \
 		&& git add -A . \
