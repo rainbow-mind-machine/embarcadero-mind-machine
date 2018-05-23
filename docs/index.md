@@ -2,6 +2,8 @@
 
 **embarcadero mind machine** is the extensible framework for building Github bot flocks.
 
+<img src="img/tiny1.jpg" width="500">
+
 ## embarcadero classes
 
 here are all of the embarcadero classes:
