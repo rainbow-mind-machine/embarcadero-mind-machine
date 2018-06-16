@@ -2,8 +2,15 @@ NAME=embarcadero
 SHORTNAME=$(NAME)
 include rules.mk
 
-# when you are starting out, run:
-# make cmr_remote fix_remotes
-# make initialize_ghpages
-# make initialize_docs
-# make initialize_src
+# run once right after you clone for the first time:
+# make init_gh
+# make init_mkdocs_material
+#
+# run once after you clone a local copy:
+# make setup_site
+#
+# to serve docs locally while working on them:
+# make serve_docs
+# 
+# when you are ready, run:
+# make deploy_docs
