@@ -2,6 +2,7 @@ site_name: "embarcadero mind machine"
 site_url: https://pages.charlesreid1.com/embarcadero-mind-machine
 repo_name: embarcadero-mind-machine
 repo_url: https://github.com/rainbow-mind-machine/embarcadero-mind-machine
+edit_uri: ""
 
 pages:
   - 'Home':              'index.md'
