@@ -16,30 +16,22 @@ class Shepherd(bmm.BoringShepherd):
         # We don't do anything extra in this constructor.
         super().__init__(json_keys_dir, name, sheep_class, **kwargs)
 
-    def _validate_key(self, bot_key):
-        # bot key for each sheep for github 
-        # needs to be a json file with keys:
-        # - username
-        # - oauth_token
-        # - oauth_secret
-        # - client_id
-        # - client_secret
-        # These are Github-specific
-        if 'name' not in bot_key.keys():
-            err = "ERROR: Shepherd found invalid key, "
-            err += "missing bot name"
-            raise Exception(err)
-
-        keys = ['name','token']
-        for key in keys:
-            if key not in bot_key:
-                err = "ERROR: Shepherd found invalid key "
-                err += "for bot %s"%(bot_key['name'])
+    def _validate_key(self, bot_key, **kwargs):
+        """
+        Validate the Github keys made by the Keymaker
+        """
+        required_keys = ['client_id',
+                         'client_secret',
+                         'oauth_token',
+                         'oauth_secret',
+                         'username']
+        for key in required_keys:
+            if key not in bot_key.keys():
+                err = "ERROR: Shepherd encountered an invalid bot key.\n"
+                err += "The bot key is missing a value for '%s'."%(key)
                 raise Exception(err)
 
-
-    def _create_sheep(self, bot_key):
-        sheep = self.sheep_class(bot_key)
+    def _create_sheep(self, bot_key, **kwargs):
+        sheep = self.sheep_class(bot_key, **kwargs)
         self.flock.append(sheep)
-
 
