@@ -1,8 +1,9 @@
 from setuptools import setup
-from embarcaderomindmachine import __version__
+
+version = "2.0"
 
 setup(  name='embarcaderomindmachine',
-        version=__version__,
+        version=version,
         description='The extensible framework for running Github bot flocks.',
         url='https://pages.charlesreid1.com/embarcadero-mind-machine',
         author='charlesreid1',
@@ -11,6 +12,9 @@ setup(  name='embarcaderomindmachine',
         tests_require=['nose'],
         license='MIT',
         packages=['embarcaderomindmachine'],
-        install_requires=['PyGithub>=1.39'],
+        install_requires=[
+                'boringmindmachine',
+                'PyGithub>=1.39'
+        ],
         zip_safe=False)
 
