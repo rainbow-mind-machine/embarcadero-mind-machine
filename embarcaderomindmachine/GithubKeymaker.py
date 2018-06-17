@@ -12,20 +12,12 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
     def __init__(self):
         super().__init__('client_id','client_secret')
 
-
+    
     # ---
     # Make Bot OAuth Keys
 
     # Bulk Key Methods:
     # These all call the single key method.
-
-    
-    def slugify(self, value):
-        """
-        Slugify a string (make it safe for filenames)
-        """
-        slug = re.sub(r'[^\w-]', '', value).strip().lower()
-        return slug 
 
 
     def make_keys_from_strings(self, names, keys_out_dir):
@@ -60,6 +52,7 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
             make_a_key(bot_name, json_target, keys_out_dir, bot_name=d[bot_name])
 
 
+    # ------
     # Single Key Method:
     # The workhorse.
 
@@ -84,6 +77,10 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
             interactive :   Go through the interactive three-legged OAuth process
                             (only set to False for testing)
         """
+        if not self.apikeys_set:
+            err = "ERROR: Could not make a bot key, no API keys set!"
+            raise Exception(err)
+
         if os.path.isdir(keys_out_dir) is False:
             subprocess.call(['mkdir','-p',keys_out_dir])
 
