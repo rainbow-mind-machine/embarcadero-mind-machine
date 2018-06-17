@@ -1,28 +1,36 @@
 # embarcadero-mind-machine
 
-**embarcadero mind machine** is the extensible framework for building Github bot flocks.
+The extensible framework for Github bot flocks.
+
+See [embarcadero-mind-machine in action](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/issues/1)!
 
 <img src="img/tiny1.jpg" width="500">
 
+## Links
+
+Find a link to the [embarcadero-mind-machine documentation](https://pages.charlesreid1.com/embarcadero-mind-machine) (you are here).
+
+Find a link to [embarcadero-mind-machine on github](https://github.com/rainbow-mind-machine/embarcadero-mind-machine)
+
+Find a link to [embarcadero-mind-machine on git.charlesreid1.com](https://git.charlesreid1.com/bots/embarcadero-mind-machine).
 
 
-## embarcadero classes
+## Embarcadero Mind Machine Classes
 
-here are all of the embarcadero classes:
-
-* [GithubKeymaker](keymaker.md)
-* [Shepherd](shepherd.md)
-* [Sheep](sheep.md)
-
-(No Lumberjack method is needed.)
-
-This follows the **mind machine** architecuture:
+This library follows the **mind machine** architecuture:
 
 * Keymaker - takes care of authentication
 * Shepherd - constructs each sheep with keys
 * Sheep - uses keys to create API instance
 
-**embarcadero mind machine** is a work in progress.
+Here are all of the classes defined in embarcadero mind machine:
+
+* [GithubKeymaker](emm_keymaker.md)
+* [Shepherd](emm_shepherd.md)
+* [Sheep](emm_sheep.md)
+
+(No Lumberjack method is needed.)
+
 
 ## developer workflow
 
