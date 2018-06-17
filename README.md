@@ -1,28 +1,14 @@
 # embarcadero-mind-machine
 
-Like rainbow mind machine, but for Github.
+The extensible framework for Github bot flocks.
 
-Keymaker:
+See [embarcadero-mind-machine in action](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/issues/1)!
 
-* Keymaker walks you through the interactive process
-* Create an application, or obtain temp user credentials
-* Get the consumer token and consumer secret token
-* Go through the login process
-* Get the user oauth token and oauth secret token
+## Links
 
-what are the items?
+Find a link to the [embarcadero-mind-machine documentation](https://pages.charlesreid1.com/embarcadero-mind-machine).
 
-* json files, presumably.
+Find a link to [embarcadero-mind-machine on github](https://github.com/rainbow-mind-machine/embarcadero-mind-machine)
 
-Shepherd:
-
-* just creates a Sheep for each key
-
-Sheep:
-
-* (who has api? everyone?)
-* Sheep should have a key, with parameters, and be a Sheep type or other derived type
-* For example, file repair bot flock would be a flock of bots that all repair files, but all doing different things.
-
-
+Find a link to [embarcadero-mind-machine on git.charlesreid1.com](https://git.charlesreid1.com/bots/embarcadero-mind-machine).
 
