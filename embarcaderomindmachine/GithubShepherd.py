@@ -1,6 +1,6 @@
 import boringmindmachine as bmm
 
-class Shepherd(bmm.BoringShepherd):
+class GithubShepherd(bmm.BoringShepherd):
     """
     Derived Shepherds only need to define:
     - how to validate keys 

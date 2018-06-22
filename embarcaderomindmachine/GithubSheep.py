@@ -3,7 +3,7 @@ import logging
 from github import Github
 import time, random
 
-class Sheep(bmm.BoringSheep):
+class GithubSheep(bmm.BoringSheep):
     """
     Sheep are created by the Shepherd.
     Sheep are initialized with a JSON key file plus parameters from the Shepherd.
