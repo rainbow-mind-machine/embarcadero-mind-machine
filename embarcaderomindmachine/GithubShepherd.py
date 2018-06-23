@@ -6,15 +6,6 @@ class GithubShepherd(bmm.BoringShepherd):
     - how to validate keys 
     - how to add sheep to flock
     """
-    def __init__(self, 
-                 json_keys_dir, 
-                 name,
-                 sheep_class=bmm.BoringSheep, 
-                 **kwargs):
-        # This constructor is not strictly necessary,
-        # it is mainly here to show the method signature.
-        # We don't do anything extra in this constructor.
-        super().__init__(json_keys_dir, name, sheep_class, **kwargs)
 
     def _validate_key(self, bot_key, **kwargs):
         """
