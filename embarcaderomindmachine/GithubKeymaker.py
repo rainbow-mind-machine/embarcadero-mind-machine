@@ -1,5 +1,5 @@
 import boringmindmachine as bmm
-import os, re, json
+import os, re, json, time
 import tempfile, subprocess
 from github import Github
 from requests_oauthlib import OAuth2Session
@@ -211,6 +211,8 @@ class GithubKeymaker(bmm.BoringOAuthKeymaker):
         ### # Fetch a protected resource, i.e. user profile
         ### r = github2.get('https://api.github.com/user')
         ### print(r.content)
+
+        time.sleep(3)
 
         # End Github-Specific Section
         # ------------8<----------------8<--------------
