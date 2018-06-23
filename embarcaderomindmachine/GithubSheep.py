@@ -26,6 +26,6 @@ class GithubSheep(bmm.BoringSheep):
 
     def hello(self):
         time.sleep(random.randint(1,10))
-        msg = "GithubSheep: Hello world! This is bot %s (login %s)"%(self.name, self.login)
+        msg = "embarcadero-mind-machine: GithubSheep: Hello world! This is bot %s (login %s)"%(self.name, self.login)
         eprint(msg)
 
