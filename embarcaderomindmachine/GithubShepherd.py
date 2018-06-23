@@ -1,4 +1,7 @@
 import boringmindmachine as bmm
+from .GithubSheep import GithubSheep
+
+from util import eprint
 
 class GithubShepherd(bmm.BoringShepherd):
     """
@@ -6,6 +9,24 @@ class GithubShepherd(bmm.BoringShepherd):
     - how to validate keys 
     - how to add sheep to flock
     """
+    def __init__(self, 
+                 json_keys_dir, 
+                 sheep_class = GithubSheep, 
+                 **kwargs):
+        """
+        This constructor calls the Boring Shepherd constructor.
+
+            json_keys_dir:  Directory where Sheep API keys are located
+
+            sheep_class:    Type of Sheep
+
+            kwargs:         Parameters passed on to the Sheep
+        """
+        super().__init__(
+                json_keys_dir, 
+                sheep_class=sheep_class, 
+                **kwargs
+        )
 
     def _validate_key(self, bot_key, **kwargs):
         """
@@ -13,12 +34,11 @@ class GithubShepherd(bmm.BoringShepherd):
         """
         required_keys = ['client_id',
                          'client_secret',
-                         'oauth_token',
-                         'oauth_secret',
-                         'username']
+                         'token',
+                         'login']
         for key in required_keys:
             if key not in bot_key.keys():
-                err = "ERROR: Shepherd encountered an invalid bot key.\n"
+                err = "ERROR: GithubShepherd encountered an invalid bot key.\n"
                 err += "The bot key is missing a value for '%s'."%(key)
                 raise Exception(err)
 
