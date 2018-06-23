@@ -7,7 +7,7 @@ import random, time
 # BlameSheep, github bots that blame
 # each other for an issue and re-assign
 # the issue back and forth..
-class BlameSheep(emm.Sheep):
+class BlameSheep(emm.GithubSheep):
     def blame(self,**kwargs):
         """
         Two bots blaming each other for breaking the build.
@@ -78,3 +78,4 @@ class BlameSheep(emm.Sheep):
             # while the other bot does all 
             # the work.
             time.sleep(60*random.randint(4,8))
+
