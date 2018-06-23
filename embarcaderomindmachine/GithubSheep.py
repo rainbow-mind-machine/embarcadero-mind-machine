@@ -1,7 +1,8 @@
 import boringmindmachine as bmm
-import logging
 from github import Github
 import time, random
+
+from util import eprint
 
 class GithubSheep(bmm.BoringSheep):
     """
@@ -14,14 +15,17 @@ class GithubSheep(bmm.BoringSheep):
         # Initialize your API instance
         self.api = Github(bot_key['token']['access_token'])
         self.params = bot_key
-        self.name = bot_key['username']
+
+        # the bot's handle
+        self.name = bot_key['name']
+
+        # the bot's official login/username
+        self.login = bot_key['login']
 
         # No kwargs used.
 
     def hello(self):
         time.sleep(random.randint(1,10))
-        logger = logging.getLogger('rainbowmindmachine')
-        msg = "Hello world! This is bot %s"%(self.name)
-        logger.info(msg)
-
+        msg = "GithubSheep: Hello world! This is bot %s (login %s)"%(self.name, self.login)
+        eprint(msg)
 
