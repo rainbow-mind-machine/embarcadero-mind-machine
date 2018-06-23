@@ -24,10 +24,17 @@ def make_keys():
             keys_out_dir='keys'
     )
 
-def run_flock():
-
+def setup_flock():
     from custom_sheep import BlameSheep
+    # Shepherd
+    shepherd = emm.GithubShepherd(
+            json_keys_dir='keys',
+            sheep_class=BlameSheep,
+            flock_name='blame bot flock'
+    )
 
+def run_flock():
+    from custom_sheep import BlameSheep
     # Shepherd
     shepherd = emm.GithubShepherd(
             json_keys_dir='keys',
@@ -42,6 +49,7 @@ def run_flock():
     )
 
 if __name__=="__main__":
-    make_keys()
+    #make_keys()
+    setup_flock()
     #run_flock()
 
