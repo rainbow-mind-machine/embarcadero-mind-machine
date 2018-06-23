@@ -1,16 +1,24 @@
 import embarcaderomindmachine as emm
 import random, time
 
+"""
+In this file we define a custom Sheep class:
+BlameSheep, github bots that detect when an
+issue is assigned to them, assign it to someone
+else, and point the finger in a comment.
+The flock argues back and forth forever...
+"""
 
-#########################################
-# here, we define a custom Sheep class:
-# BlameSheep, github bots that blame
-# each other for an issue and re-assign
-# the issue back and forth..
 class BlameSheep(emm.GithubSheep):
     def blame(self,**kwargs):
         """
         Two bots blaming each other for breaking the build.
+
+        kwargs:
+
+            (org|user) :    The organization or user owning the argument repo
+            repo :          The repository in which to begin an issues argument
+            issueno :       The issue number in the specified repo in which to argue
         """
         if 'org' not in kwargs and 'user' not in kwargs:
             err = "ERROR: no 'org' or 'user' specified for BlameSheep."
@@ -46,8 +54,6 @@ class BlameSheep(emm.GithubSheep):
         # Start with a little nap so we aren't racing
         time.sleep(10*random.randint(4,8))
 
-        # To start with, we'll hard-code the issue.
-        # rainbow-mind-machine/embarcadero-mind-machine/#1
         if 'org' in kwargs:
             emm = g.get_organization(kwargs['org']).get_repo(kwargs['repo'])
         elif 'user' in kwargs:
@@ -58,24 +64,32 @@ class BlameSheep(emm.GithubSheep):
         while True:
 
             listocomments = list(iss.get_comments())
+
             if len(listocomments)<=2:
+
                 # The blame game has not yet kicked off.
                 # We get to start it!
-                comment = "It wasn't me, it was @{blame}".format(blame=whoarethey.login)
+
+                comment = "It wasn't me, it was @%s"%(whoarethey_name)
                 iss.edit(assignees=[whoarethey])
                 print('[@%s] changed assignees to @%s'%(whoami_name, whoarethey_name))
                 iss.create_comment(comment)
                 print('[@%s] %s'%(whoami_name, comment))
 
             else:
-                iss.edit(assignees=[whoarethey])
-                print('[@%s] changed assignees to %s'%(whoami_name, whoarethey.login))
-                comment = blame_messages[random.randint(0,len(blame_messages)-1)].format(blame=whoarethey_name)
-                iss.create_comment(comment)
-                print('[@%s] %s'%(whoami_name, comment))
+
+                # If the issue is assigned to us,
+                # reassign it and come up with an excuse.
+                if(iss.assignee == whoami_name):
+
+                    iss.edit(assignees=[whoarethey])
+                    print('[@%s] changed assignees to %s'%(whoami_name, whoarethey.login))
+                    comment = blame_messages[random.randint(0,len(blame_messages)-1)].format(blame=whoarethey_name)
+                    iss.create_comment(comment)
+                    print('[@%s] %s'%(whoami_name, comment))
 
             # Now sit back and take a nap
             # while the other bot does all 
-            # the work.
+            # the hard work.
             time.sleep(60*random.randint(4,8))
 

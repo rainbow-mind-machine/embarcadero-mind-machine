@@ -50,6 +50,6 @@ def run_flock():
 
 if __name__=="__main__":
     #make_keys()
-    setup_flock()
-    #run_flock()
+    #setup_flock()
+    run_flock()
 
