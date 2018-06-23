@@ -2,7 +2,7 @@ import boringmindmachine as bmm
 from github import Github
 import time, random
 
-from util import eprint
+from .utils import eprint
 
 class GithubSheep(bmm.BoringSheep):
     """

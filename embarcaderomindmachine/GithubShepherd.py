@@ -1,7 +1,7 @@
 import boringmindmachine as bmm
 from .GithubSheep import GithubSheep
 
-from util import eprint
+from .utils import eprint
 
 class GithubShepherd(bmm.BoringShepherd):
     """
