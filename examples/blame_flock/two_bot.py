@@ -45,7 +45,7 @@ def run_flock():
             'be_stupid',
             org='rainbow-mind-machine',
             repo='embarcadero-mind-machine',
-            issueno=2,
+            issueno=3,
             delay=3
     )
 
