@@ -42,10 +42,11 @@ def run_flock():
             flock_name='blame bot flock'
     )
     shepherd.perform_parallel_action(
-            'blame',
+            'be_stupid',
             org='rainbow-mind-machine',
             repo='embarcadero-mind-machine',
-            issueno=2
+            issueno=2,
+            delay=3
     )
 
 if __name__=="__main__":
