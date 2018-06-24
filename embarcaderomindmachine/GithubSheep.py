@@ -25,7 +25,11 @@ class GithubSheep(bmm.BoringSheep):
         # No kwargs used.
 
     def hello(self):
+        """
+        Use tprint (thread-print) to print a message one bot at a time
+        without everybody stepping all over each other.
+        """
         time.sleep(random.randint(1,10))
         msg = "embarcadero-mind-machine: GithubSheep: Hello world! This is bot %s (login %s)"%(self.name, self.login)
-        eprint(msg)
+        self.tprint(msg)
 
