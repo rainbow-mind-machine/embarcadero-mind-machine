@@ -85,8 +85,8 @@ theme:
   name: null
   custom_dir: 'mkdocs-material/material'
   palette:
-    primary: 'orange'
-    accent: 'orange'
+    primary: 'green'
+    accent: 'green'
   logo:
     icon: 'settings_input_component'
   font:
