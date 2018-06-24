@@ -37,10 +37,6 @@ and we can incrementally improve, extend, override,
 or redefine behaviors to make them increasingly complex,
 while still abstracting away messy details.
 
-See the [TwitterShepherd](rmm_shepherd.md) page or the
-[TwitterSheep](rmm_sheep.md) or [SocialSheep](rmm_social_sheep.md)
-page for examples.
-
 
 ## How is embarcadero mind machine POOP-y?
 
@@ -55,24 +51,4 @@ provide a set of useful classes, but also make it easy for
 users to write their own classes.
 
 Everything is about classes.
-
-
-
-
-
-----
-
-
-**rainbow mind machine** is an extensible framework for running Twitter bot flocks in Python.
-
-
-That means we start out with bots that "just work" 
-and we can incrementally improve, extend, override,
-or redefine behaviors to make them increasingly complex,
-while still abstracting away messy details.
-
-See the [TwitterShepherd](rmm_shepherd.md) page or the
-[TwitterSheep](rmm_sheep.md) or [SocialSheep](rmm_social_sheep.md)
-page for examples.
-
 
