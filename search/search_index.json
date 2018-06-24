@@ -2,63 +2,338 @@
     "docs": [
         {
             "location": "/",
-            "text": "embarcadero-mind-machine\n\u00b6\n\n\nembarcadero mind machine\n is the extensible framework for building Github bot flocks.\n\n\n\n\nembarcadero classes\n\u00b6\n\n\nhere are all of the embarcadero classes:\n\n\n\n\nGithubKeymaker\n\n\nShepherd\n\n\nSheep\n\n\n\n\n(No Lumberjack method is needed.)\n\n\nThis follows the \nmind machine\n architecuture:\n\n\n\n\nKeymaker - takes care of authentication\n\n\nShepherd - constructs each sheep with keys\n\n\nSheep - uses keys to create API instance\n\n\n\n\nembarcadero mind machine\n is a work in progress.\n\n\ndeveloper workflow\n\u00b6\n\n\nsee \nboring mind machine\n\nfor info about the infrastructure.",
+            "text": "embarcadero-mind-machine\n\u00b6\n\n\n\n\nembarcadero mind machine\n is an extensible framework for running Github bot\nflocks.\n\n\nrainbow mind machine\n uses the mind machine framework to provide the user\nwith a simple set of building blocks for building bot flocks: a Keymaker, a\nShepherd, and a Sheep.\n\n\nThe philosophy is to help users get started quickly, and build on simple\nbehaviors to create complex, rich bot behaviors.\n\n\nSee \nembarcadero-mind-machine in action\n!\n\n\nAll the shields\n\u00b6\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinks\n\u00b6\n\n\nembarcadero mind machine (emm) links:\n\n\n\n\nemm source code on Github: \nhttps://github.com/rainbow-mind-machine/embarcadero-mind-machine\n\n\nemm documentation: \nhttps://pages.charlesreid1.com/embarcadero-mind-machine\n\n\nrainbow mind machine organization on Github: \nhttps://github.com/rainbow-mind-machine\n\n\n\n\nreleases:\n\n\n\n\nemm releases on Github: \nhttps://github.com/rainbow-mind-machine/embarcadero-mind-machine/releases\n\n\nemm on pypi: \nhttps://pypi.org/project/rainbowmindmachine/\n\n\n(TBA) emm on dockerhub: \nhttps://hub.docker.com/r/rainbowmindmachine/embarcaderomindmachine/\n\n\n\n\nPages\n\u00b6\n\n\nAbout the Mind Machine Framework\n - general\ninformation about the mind machine framework (how does it work? what does it\nlook like?)\n\n\nAbout Rainbow Mind Machine\n - about the rainbow mind machine library\n(what is it? what does it do?)\n\n\nInstalling\n - installation instructions (how do I install bmm?)\n\n\nQuick Start\n - quick start instructions for getting started\nwith rainbow mind machine - run your first Twitter bot!\n\n\nDocumentation for components implemented in rainbow mind machine:\n\n\n\n\nKeymakers:\n\n\nGithubKeymaker @ boring mind machine documentation\n\n\n\n\n\n\nemm.GithubShepherd\n\n\nemm.GithubSheep\n\n\n\n\nDeveloper Notes\n\u00b6\n\n\nSee \nDeveloper Notes\n for info about the \nworkflow for uploading changes to pypi and dockerhub.\n\n\nGet In Touch\n\u00b6\n\n\nContact the author: \nrainbowmindmachine@charlesreid1.com",
             "title": "Home"
         },
         {
             "location": "/#embarcadero-mind-machine",
-            "text": "embarcadero mind machine  is the extensible framework for building Github bot flocks.",
+            "text": "embarcadero mind machine  is an extensible framework for running Github bot\nflocks.  rainbow mind machine  uses the mind machine framework to provide the user\nwith a simple set of building blocks for building bot flocks: a Keymaker, a\nShepherd, and a Sheep.  The philosophy is to help users get started quickly, and build on simple\nbehaviors to create complex, rich bot behaviors.  See  embarcadero-mind-machine in action !",
             "title": "embarcadero-mind-machine"
         },
         {
-            "location": "/#embarcadero-classes",
-            "text": "here are all of the embarcadero classes:   GithubKeymaker  Shepherd  Sheep   (No Lumberjack method is needed.)  This follows the  mind machine  architecuture:   Keymaker - takes care of authentication  Shepherd - constructs each sheep with keys  Sheep - uses keys to create API instance   embarcadero mind machine  is a work in progress.",
-            "title": "embarcadero classes"
+            "location": "/#all-the-shields",
+            "text": "",
+            "title": "All the shields"
         },
         {
-            "location": "/#developer-workflow",
-            "text": "see  boring mind machine \nfor info about the infrastructure.",
-            "title": "developer workflow"
+            "location": "/#links",
+            "text": "embarcadero mind machine (emm) links:   emm source code on Github:  https://github.com/rainbow-mind-machine/embarcadero-mind-machine  emm documentation:  https://pages.charlesreid1.com/embarcadero-mind-machine  rainbow mind machine organization on Github:  https://github.com/rainbow-mind-machine   releases:   emm releases on Github:  https://github.com/rainbow-mind-machine/embarcadero-mind-machine/releases  emm on pypi:  https://pypi.org/project/rainbowmindmachine/  (TBA) emm on dockerhub:  https://hub.docker.com/r/rainbowmindmachine/embarcaderomindmachine/",
+            "title": "Links"
         },
         {
-            "location": "/keymaker/",
+            "location": "/#pages",
+            "text": "About the Mind Machine Framework  - general\ninformation about the mind machine framework (how does it work? what does it\nlook like?)  About Rainbow Mind Machine  - about the rainbow mind machine library\n(what is it? what does it do?)  Installing  - installation instructions (how do I install bmm?)  Quick Start  - quick start instructions for getting started\nwith rainbow mind machine - run your first Twitter bot!  Documentation for components implemented in rainbow mind machine:   Keymakers:  GithubKeymaker @ boring mind machine documentation    emm.GithubShepherd  emm.GithubSheep",
+            "title": "Pages"
+        },
+        {
+            "location": "/#developer-notes",
+            "text": "See  Developer Notes  for info about the \nworkflow for uploading changes to pypi and dockerhub.",
+            "title": "Developer Notes"
+        },
+        {
+            "location": "/#get-in-touch",
+            "text": "Contact the author:  rainbowmindmachine@charlesreid1.com",
+            "title": "Get In Touch"
+        },
+        {
+            "location": "/mind-machine-docs/about/",
+            "text": "Mind Machine Framework\n\u00b6\n\n\nThe mind machine framework is designed to be a\n\nsimple, extensible framework\n for developing\nbots.\n\n\nHow is it simple?\n\u00b6\n\n\nThe mind machine concept is simple because there are only three\ncomponents:\n\n\n\n\nKeymaker\n\n\nSheep\n\n\nShepherd\n\n\n\n\nThese are the three types of objects that you deal with in any\ngiven mind machine (and you should not have to deal with the\nKeymaker much).\n\n\nHow is it extensible?\n\u00b6\n\n\nThe concept of \"extensible\" refers specifically to the use\nof inheritance and extended classes. \n\n\nWe want to keep things as simple as possible, but also build\nfunctionality up into complicated bots. Using base classes\nand extending one bit at a time helps us accomplish that.\n\n\nHow is it POOP-y?\n\u00b6\n\n\nThe mind machine libraries are a great illustration of\nPython Object-Oriented Programming (POOP) in action.\nThese are very POOP-y libraries, in that they use\nclasses to combine minimal functionality into classes.\n\n\nWe will point out the many examples of POOP-y behavior\nwhen we see them in a particular mind machine example.\n\n\nDeep Thoughts\n\u00b6\n\n\nFoucault\n\n\nMotivations\n\n\nNaming things",
+            "title": "About Mind Machine Framework"
+        },
+        {
+            "location": "/mind-machine-docs/about/#mind-machine-framework",
+            "text": "The mind machine framework is designed to be a simple, extensible framework  for developing\nbots.",
+            "title": "Mind Machine Framework"
+        },
+        {
+            "location": "/mind-machine-docs/about/#how-is-it-simple",
+            "text": "The mind machine concept is simple because there are only three\ncomponents:   Keymaker  Sheep  Shepherd   These are the three types of objects that you deal with in any\ngiven mind machine (and you should not have to deal with the\nKeymaker much).",
+            "title": "How is it simple?"
+        },
+        {
+            "location": "/mind-machine-docs/about/#how-is-it-extensible",
+            "text": "The concept of \"extensible\" refers specifically to the use\nof inheritance and extended classes.   We want to keep things as simple as possible, but also build\nfunctionality up into complicated bots. Using base classes\nand extending one bit at a time helps us accomplish that.",
+            "title": "How is it extensible?"
+        },
+        {
+            "location": "/mind-machine-docs/about/#how-is-it-poop-y",
+            "text": "The mind machine libraries are a great illustration of\nPython Object-Oriented Programming (POOP) in action.\nThese are very POOP-y libraries, in that they use\nclasses to combine minimal functionality into classes.  We will point out the many examples of POOP-y behavior\nwhen we see them in a particular mind machine example.",
+            "title": "How is it POOP-y?"
+        },
+        {
+            "location": "/mind-machine-docs/about/#deep-thoughts",
+            "text": "Foucault  Motivations  Naming things",
+            "title": "Deep Thoughts"
+        },
+        {
+            "location": "/mind-machine-docs/keymaker/",
+            "text": "The Keymaker\n\u00b6\n\n\n\n\nYou can definitely trust this keymaker.\n\n\nThe Keymaker is the object that is used to authenticate with the third party\nservice and generate the bot keys the application needs to do things on behalf\nof a user account.\n\n\nThis document provides a high-level overview of the Keymaker.\n\n\nUsing the Keymaker\n\u00b6\n\n\nIf you don't care about all of this business and just want to know\nhow to use the keymaker, see the \nboring mind machine\ndocumentation\n.\n\n\nSpecifically, see coverage of the \n\nBoringOAuthKeymaker\n\nclass, along with the service-specific\n\nGithub Keymaker\n,\n\nGoogle Keymaker\n, and \n\nTwitter Keymaker\n\nclasses.\n\n\nBackground: The Three-Legged OAuth Process\n\u00b6\n\n\nIn theory, not all Keymakers must do OAuth, but in practice,\n\nall Keymakers do OAuth\n.\n\n\nThe Keymaker carries out a one-time authorization step that needs to \nbe done once for each Sheep = bot = account.\n\n\nThe Keymaker will be given a set of \"items\" (more on this in a moment), with one\nitem = one Sheep = one bot = one account, etc.  The Keymaker iterates through\neach item and performs the three-legged OAuth process.\n\n\nHere's a summary of the process:\n\n\n\n\nThe three legs are: the user (the bot account), the third party service (Github/Google/Twitter/other), and the consumer \n    (your mind machine app - specifically, the Keymaker component)\n\n\nThe Keymaker will initiate the process by requesting an OAuth URL from the third party\n    (this is how an app asks a user for permission to access their account)\n\n\nThird party will return an OAuth URL to the Keymaker, which will pass it to the user\n\n\nThe user will open the URL in their browser, and sign in using a bot account\n\n\nThird party will verify the credentials of the user, and create a temporary token\n\n\nThis token is returned to the API application (via callback URL/other mechanism)\n\n\nAPI application sends the token to the third party, which verifies the token matches\n\n\nThird party gives the API application a new OAuth token. This is the magic token\n    that allows the OAuth application to do things with the bot account.\n\n\n\n\nWhy the song and dance? The three-legged authentication process is intended to \nallow API applications to verify a user's identity (i.e., yes this user \nactually\n granted\npermission for the API application to control their account) without having to handle\nsensitive data like a user's hashed password. It also keeps the third party in\ncontrol of the process.\n\n\nKeymaker Credentials\n\u00b6\n\n\nKeymaker Input: API Keys\n\u00b6\n\n\nThere are two pieces of information that are required\nto do things as your API application (independent of any\nbot accounts):\n\n\n\n\nAPI application key\n\n\nAPI application secret key\n\n\n\n\nThese are the two pieces of information that are required to prove\nto the third party service that you are the actual owner of your\napplication.\n\n\nEach service stores these pieces of information in different ways,\nand calls them by different names. For example:\n\n\n\n\nClient key/client secret key\n\n\nConsumer token/consumer token secret\n\n\nAPI token/API secret token\n\n\netc...\n\n\n\n\nThe \nboring mind machine\n\nlibrary provides a base OAuth Keymaker class\ncalled BoringOAuthKeymaker. This class implements\nthe OAuth process in a generic way. The details\nspecific to the third party service are then implemented\nin child classes (e.g., GithubKeymaker).\n\n\nKeymaker Output: OAuth Keys\n\u00b6\n\n\nIn general, the Keymaker creates a set of bot account keys\ncorresponding to a set of items.\n\n\nOnce the Keymaker and the user go through the three-legged\nauthentication process for one bot account, the Keymaker\nwill create a JSON file with the bot key so that it can\nbe used again in the future.\n\n\nThe bot key contains both the API keys for the application,\nand the OAuth keys for the bot account.",
+            "title": "Keymaker"
+        },
+        {
+            "location": "/mind-machine-docs/keymaker/#the-keymaker",
+            "text": "You can definitely trust this keymaker.  The Keymaker is the object that is used to authenticate with the third party\nservice and generate the bot keys the application needs to do things on behalf\nof a user account.  This document provides a high-level overview of the Keymaker.",
+            "title": "The Keymaker"
+        },
+        {
+            "location": "/mind-machine-docs/keymaker/#using-the-keymaker",
+            "text": "If you don't care about all of this business and just want to know\nhow to use the keymaker, see the  boring mind machine\ndocumentation .  Specifically, see coverage of the  BoringOAuthKeymaker \nclass, along with the service-specific Github Keymaker , Google Keymaker , and  Twitter Keymaker \nclasses.",
+            "title": "Using the Keymaker"
+        },
+        {
+            "location": "/mind-machine-docs/keymaker/#background-the-three-legged-oauth-process",
+            "text": "In theory, not all Keymakers must do OAuth, but in practice, all Keymakers do OAuth .  The Keymaker carries out a one-time authorization step that needs to \nbe done once for each Sheep = bot = account.  The Keymaker will be given a set of \"items\" (more on this in a moment), with one\nitem = one Sheep = one bot = one account, etc.  The Keymaker iterates through\neach item and performs the three-legged OAuth process.  Here's a summary of the process:   The three legs are: the user (the bot account), the third party service (Github/Google/Twitter/other), and the consumer \n    (your mind machine app - specifically, the Keymaker component)  The Keymaker will initiate the process by requesting an OAuth URL from the third party\n    (this is how an app asks a user for permission to access their account)  Third party will return an OAuth URL to the Keymaker, which will pass it to the user  The user will open the URL in their browser, and sign in using a bot account  Third party will verify the credentials of the user, and create a temporary token  This token is returned to the API application (via callback URL/other mechanism)  API application sends the token to the third party, which verifies the token matches  Third party gives the API application a new OAuth token. This is the magic token\n    that allows the OAuth application to do things with the bot account.   Why the song and dance? The three-legged authentication process is intended to \nallow API applications to verify a user's identity (i.e., yes this user  actually  granted\npermission for the API application to control their account) without having to handle\nsensitive data like a user's hashed password. It also keeps the third party in\ncontrol of the process.",
+            "title": "Background: The Three-Legged OAuth Process"
+        },
+        {
+            "location": "/mind-machine-docs/keymaker/#keymaker-credentials",
+            "text": "",
+            "title": "Keymaker Credentials"
+        },
+        {
+            "location": "/mind-machine-docs/keymaker/#keymaker-input-api-keys",
+            "text": "There are two pieces of information that are required\nto do things as your API application (independent of any\nbot accounts):   API application key  API application secret key   These are the two pieces of information that are required to prove\nto the third party service that you are the actual owner of your\napplication.  Each service stores these pieces of information in different ways,\nand calls them by different names. For example:   Client key/client secret key  Consumer token/consumer token secret  API token/API secret token  etc...   The  boring mind machine \nlibrary provides a base OAuth Keymaker class\ncalled BoringOAuthKeymaker. This class implements\nthe OAuth process in a generic way. The details\nspecific to the third party service are then implemented\nin child classes (e.g., GithubKeymaker).",
+            "title": "Keymaker Input: API Keys"
+        },
+        {
+            "location": "/mind-machine-docs/keymaker/#keymaker-output-oauth-keys",
+            "text": "In general, the Keymaker creates a set of bot account keys\ncorresponding to a set of items.  Once the Keymaker and the user go through the three-legged\nauthentication process for one bot account, the Keymaker\nwill create a JSON file with the bot key so that it can\nbe used again in the future.  The bot key contains both the API keys for the application,\nand the OAuth keys for the bot account.",
+            "title": "Keymaker Output: OAuth Keys"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/",
+            "text": "The Shepherd\n\u00b6\n\n\n\n\nThe shepherd's (\npasteur\n) power manifests itself, therefore, in a duty, a task to\nbe undertaken, so that - and I think this is also an important characteristic of\npastoral power - the form it takes is not first of all the striking display of\nstrength and superiority. Pastoral power initially manifests itself in its zeal,\ndevotion, and endless application. What is the shepherd (\nberger\n)? Is (s)he someone\nwhose strength strikes people's eyes, like the sovereigns or gods, like the Greek\ngods, who essentially appear in their splendor? Not at all. The shepherd is\nsomeone who keeps watch. (S)he \"keeps watch\" in the sense, of course, of keeping an\neye out for possible evils, but above all in the sense of vigilance with regard\nto any possible misfortune.\n\n\n\n\nMichel Foucault, \nSecurity, Territory, Population: Lectures at the Coll\u00e9ge de France\n (1977-1978)\n\n\n\n\n\n\n\n\nThe rainbow mind machine shepherd.\n\n\nwhat is the Shepherd?\n\u00b6\n\n\nThe Shepherd is a very simple object: it is basically a data container\nfor storing Sheep.\n\n\nwhen does the Shepherd come in?\n\u00b6\n\n\nThe first thing a bot flock needs is a set of keys.\nThat's what the \nKeymaker\n is for.\n\n\nOnce the bot flock keys have been created with the Keymaker,\nthe bot flock is started. To do that, the Shepherd\ninitializes each Sheep with a corresponding JSON \nkey file (created by the Keymaker).\n\n\nhow does the Shepherd tend to the Sheep?\n\u00b6\n\n\nIn general, the Shepherd is a free-range parent, and lets the \nSheep go off and do their own thing.\n\n\nNote however, that in the spirit of extensibility,\nyou can extend the Shepherd and Sheep classes to \nchange the nature of your bot flock.\n(See next section.)\n\n\nwhen and how do you extend the Shepherd?\n\u00b6\n\n\nThe Shepherd class determines how much coordination\nhappens among different Sheep in the flock and between\nthe flock and the outside world (the Internet).\n\n\nSome simple examples:\n\n\nwebhook bot flock\n\u00b6\n\n\nAs an example of a bot flock that requires tighter integration\nbetween the Shepherd and the Sheep, imagine you want to create\na bot fock where the bots can be controlled with webhooks.\n\n\nYou would need the Shepherd to act as a central dispatcher \nand process incoming webhooks to determine which webhook \npayloads to pass on to which Sheep. But the Sheep also need\nto be modified to listen for instructions from the Shepherd.\n\n\nTo modify the Shepherd class, we would add a method \nthat listens for incoming webhooks, and a method or \nmethods implementing logic about which payloads to\npass along to which Sheep (or to call the appropriate\nfunctions when webhooks trigger flock-wide actions).\n\n\nTo modify the Sheep class, we would add a \nlisten()\n method\nthat would run forever - ideally in parallel with other\nrun-forever methods.\n\n\ntwo bots per key flock\n\u00b6\n\n\nSuppose we wanted to build an argument bot flock.\nThis bot flock would consist of pairs of Sheep\nthat use Queneau generation to create dialogue,\nand that argue back and forth forever with each other.\n\n\nThis bot flock modifies the way that our Sheep\ncoordinate with each other, which is an indication\nwe should change the Shepherd class.\n\n\nThe Sheep bots we will use will work identically to\na normal Queneau Sheep bot. Each bot generates dialogue\nfrom a single speaker, and tweets it in response to \nanother bot tweeting.\n\n\nWhile we \ncould\n extend the Sheep class to control the dialogue,\nit would be easier to use the inner/outer loop structure\nthat the QueneauSheep class already has. That way, the Sheep\ndo not require any extending.\n\n\nThe Shepherd class needs to be modified by changing\nthe way it instantiates bots from keys. Instead of \ncreating one bot per key, it should create two \nbots per keys. \n\n\n(Note that the user will need to provide relevant\ndetails in the key or config dictionaries. For example,\nname and handle of both bot sides, inner/outer loop timing,\netc.)\n\n\nThe \n-setup_keys()\n method will not change, because \nwe want to maintain the consistency of one key file\ncorresponding to one bot corresponding to one Twitter \naccount.\n\n\nThe \n_setup_sheep()\n method would be modified from \nits current arrangement (pseudocode):\n\n\ncurrent _setup_sheep() method:\n    for json in list-of-all-json-files:\n        create new sheep from json\n        add new sheep to flock\n\n\n\n\n\nto something more like (pseudocode):\n\n\nnew _setup_sheep() method:\n    for (bot1, bot2) in list-of-all-bot-pairs:\n        get key1 from keys\n        create bot1 from key1\n\n        get key2 from keys\n        create bot2 from key2\n\n        link bot1 and bot2\n        add bot1 and bot2 to flock\n\n\n\n\n\nIn this case, we want to have two Queneau Sheep that \nwork almost exactly the same as normal Queneau Sheep,\nwith perhaps a slight modification to make sure that\neach bot generates dialogue from a single speaker \ncorresponding to their party in the argument.",
+            "title": "Shepherd"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/#the-shepherd",
+            "text": "The shepherd's ( pasteur ) power manifests itself, therefore, in a duty, a task to\nbe undertaken, so that - and I think this is also an important characteristic of\npastoral power - the form it takes is not first of all the striking display of\nstrength and superiority. Pastoral power initially manifests itself in its zeal,\ndevotion, and endless application. What is the shepherd ( berger )? Is (s)he someone\nwhose strength strikes people's eyes, like the sovereigns or gods, like the Greek\ngods, who essentially appear in their splendor? Not at all. The shepherd is\nsomeone who keeps watch. (S)he \"keeps watch\" in the sense, of course, of keeping an\neye out for possible evils, but above all in the sense of vigilance with regard\nto any possible misfortune.   Michel Foucault,  Security, Territory, Population: Lectures at the Coll\u00e9ge de France  (1977-1978)     The rainbow mind machine shepherd.",
+            "title": "The Shepherd"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/#what-is-the-shepherd",
+            "text": "The Shepherd is a very simple object: it is basically a data container\nfor storing Sheep.",
+            "title": "what is the Shepherd?"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/#when-does-the-shepherd-come-in",
+            "text": "The first thing a bot flock needs is a set of keys.\nThat's what the  Keymaker  is for.  Once the bot flock keys have been created with the Keymaker,\nthe bot flock is started. To do that, the Shepherd\ninitializes each Sheep with a corresponding JSON \nkey file (created by the Keymaker).",
+            "title": "when does the Shepherd come in?"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/#how-does-the-shepherd-tend-to-the-sheep",
+            "text": "In general, the Shepherd is a free-range parent, and lets the \nSheep go off and do their own thing.  Note however, that in the spirit of extensibility,\nyou can extend the Shepherd and Sheep classes to \nchange the nature of your bot flock.\n(See next section.)",
+            "title": "how does the Shepherd tend to the Sheep?"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/#when-and-how-do-you-extend-the-shepherd",
+            "text": "The Shepherd class determines how much coordination\nhappens among different Sheep in the flock and between\nthe flock and the outside world (the Internet).  Some simple examples:",
+            "title": "when and how do you extend the Shepherd?"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/#webhook-bot-flock",
+            "text": "As an example of a bot flock that requires tighter integration\nbetween the Shepherd and the Sheep, imagine you want to create\na bot fock where the bots can be controlled with webhooks.  You would need the Shepherd to act as a central dispatcher \nand process incoming webhooks to determine which webhook \npayloads to pass on to which Sheep. But the Sheep also need\nto be modified to listen for instructions from the Shepherd.  To modify the Shepherd class, we would add a method \nthat listens for incoming webhooks, and a method or \nmethods implementing logic about which payloads to\npass along to which Sheep (or to call the appropriate\nfunctions when webhooks trigger flock-wide actions).  To modify the Sheep class, we would add a  listen()  method\nthat would run forever - ideally in parallel with other\nrun-forever methods.",
+            "title": "webhook bot flock"
+        },
+        {
+            "location": "/mind-machine-docs/shepherd/#two-bots-per-key-flock",
+            "text": "Suppose we wanted to build an argument bot flock.\nThis bot flock would consist of pairs of Sheep\nthat use Queneau generation to create dialogue,\nand that argue back and forth forever with each other.  This bot flock modifies the way that our Sheep\ncoordinate with each other, which is an indication\nwe should change the Shepherd class.  The Sheep bots we will use will work identically to\na normal Queneau Sheep bot. Each bot generates dialogue\nfrom a single speaker, and tweets it in response to \nanother bot tweeting.  While we  could  extend the Sheep class to control the dialogue,\nit would be easier to use the inner/outer loop structure\nthat the QueneauSheep class already has. That way, the Sheep\ndo not require any extending.  The Shepherd class needs to be modified by changing\nthe way it instantiates bots from keys. Instead of \ncreating one bot per key, it should create two \nbots per keys.   (Note that the user will need to provide relevant\ndetails in the key or config dictionaries. For example,\nname and handle of both bot sides, inner/outer loop timing,\netc.)  The  -setup_keys()  method will not change, because \nwe want to maintain the consistency of one key file\ncorresponding to one bot corresponding to one Twitter \naccount.  The  _setup_sheep()  method would be modified from \nits current arrangement (pseudocode):  current _setup_sheep() method:\n    for json in list-of-all-json-files:\n        create new sheep from json\n        add new sheep to flock  to something more like (pseudocode):  new _setup_sheep() method:\n    for (bot1, bot2) in list-of-all-bot-pairs:\n        get key1 from keys\n        create bot1 from key1\n\n        get key2 from keys\n        create bot2 from key2\n\n        link bot1 and bot2\n        add bot1 and bot2 to flock  In this case, we want to have two Queneau Sheep that \nwork almost exactly the same as normal Queneau Sheep,\nwith perhaps a slight modification to make sure that\neach bot generates dialogue from a single speaker \ncorresponding to their party in the argument.",
+            "title": "two bots per key flock"
+        },
+        {
+            "location": "/mind-machine-docs/sheep/",
+            "text": "The Sheep\n\u00b6\n\n\n\n\nThe rainbow mind machine sheep.\n\n\nThe Sheep is the component of the bot flock that actually\nperforms the actions using the bot accounts.\n\n\nThe Shepherd will instruct each Sheep to start performing an action - either in\nparallel (if it is a \"forever\" action like tweeting) or in serial (if it is a\n\"one-time\" action, like changing the bot user's profile).\n\n\nEach Sheep uses a bot key (created by the Keymaker and loaded by\nthe Shepherd) to create an API instance in the constructor.\nEach Sheep then uses that API instance to perform actions.\n\n\nThe BoringSheep base class in \nboring mind machine\n\ndefines a generic dispatcher method (which turns strings\ninto function calls) to allow Shepherds to call particular\nactions for each Sheep.\n\n\nDefining Actions\n\u00b6\n\n\nTo define an action, define a method for that action.\n(For example, to define a tweet action, make a \ntweet()\n method\nin the Sheep class you are using.)\n\n\nTo control how the action works and introduce variation, you can \npass extra parameters (in the form of keyword arguments) to the\naction method, and the Shepherd will pass those along to the Sheep.\n\n\nThe general pattern this follows is:\n\n\n\n\nset up or point to an API endpoint\n\n\ncreate or use the API client object to call the API endpoint\n\n\nprocess the results",
+            "title": "Sheep"
+        },
+        {
+            "location": "/mind-machine-docs/sheep/#the-sheep",
+            "text": "The rainbow mind machine sheep.  The Sheep is the component of the bot flock that actually\nperforms the actions using the bot accounts.  The Shepherd will instruct each Sheep to start performing an action - either in\nparallel (if it is a \"forever\" action like tweeting) or in serial (if it is a\n\"one-time\" action, like changing the bot user's profile).  Each Sheep uses a bot key (created by the Keymaker and loaded by\nthe Shepherd) to create an API instance in the constructor.\nEach Sheep then uses that API instance to perform actions.  The BoringSheep base class in  boring mind machine \ndefines a generic dispatcher method (which turns strings\ninto function calls) to allow Shepherds to call particular\nactions for each Sheep.",
+            "title": "The Sheep"
+        },
+        {
+            "location": "/mind-machine-docs/sheep/#defining-actions",
+            "text": "To define an action, define a method for that action.\n(For example, to define a tweet action, make a  tweet()  method\nin the Sheep class you are using.)  To control how the action works and introduce variation, you can \npass extra parameters (in the form of keyword arguments) to the\naction method, and the Shepherd will pass those along to the Sheep.  The general pattern this follows is:   set up or point to an API endpoint  create or use the API client object to call the API endpoint  process the results",
+            "title": "Defining Actions"
+        },
+        {
+            "location": "/about/",
+            "text": "About embarcadero mind machine\n\u00b6\n\n\nembarcadero mind machine (emm)\n is a library for running Github bot flocks.\nIt is owned by the \nrainbow-mind-machine\n\norganization on Github.\n\n\nLike all mind machines, \nembarcadero mind machine\n is simple and extensible.\n\n\nHow is embarcadero mind machine simple?\n\u00b6\n\n\nThe \nmind machine framework\n revolves around providing a few\nsimple components for building bot flocks:\n\n\n\n\nKeymaker classes\n\n\nShepherd classes\n\n\nSheep classes\n\n\n\n\nBut it gets even simpler than that:\n\nboring-mind-machine\n\nprovides a \nGithubKeymaker class\n,\nso that embarcadero mind machine can focus exclusively on Shepherd and Sheep\nclasses.\n\n\nThat's pretty simple!\n\n\nWhat does embarcadero mind machine extend or do?\n\u00b6\n\n\nembarcadero mind machine is \nextensible\n to keep bots from becoming boring.\nThere are a limited number of components to extend (2), these two components\nhave a simple and clear function call order, and embarcadero mind machine tries\nto use sensible defaults.\n\n\nThat means we start out with bots that \"just work\" \nand we can incrementally improve, extend, override,\nor redefine behaviors to make them increasingly complex,\nwhile still abstracting away messy details.\n\n\nHow is embarcadero mind machine POOP-y?\n\u00b6\n\n\nThe embarcadero mind machine library makes good use of concepts in\nPython Object Oriented Programming, or POOP.\n\n\nThe embarcadero mind machine library uses inheritance, because the entire\nlibrary is built on base classes provided by boring mind machine.\n\n\nAdditionally, the whole way embarcadero mind machine works is to\nprovide a set of useful classes, but also make it easy for\nusers to write their own classes.\n\n\nEverything is about classes.",
+            "title": "About emm"
+        },
+        {
+            "location": "/about/#about-embarcadero-mind-machine",
+            "text": "embarcadero mind machine (emm)  is a library for running Github bot flocks.\nIt is owned by the  rainbow-mind-machine \norganization on Github.  Like all mind machines,  embarcadero mind machine  is simple and extensible.",
+            "title": "About embarcadero mind machine"
+        },
+        {
+            "location": "/about/#how-is-embarcadero-mind-machine-simple",
+            "text": "The  mind machine framework  revolves around providing a few\nsimple components for building bot flocks:   Keymaker classes  Shepherd classes  Sheep classes   But it gets even simpler than that: boring-mind-machine \nprovides a  GithubKeymaker class ,\nso that embarcadero mind machine can focus exclusively on Shepherd and Sheep\nclasses.  That's pretty simple!",
+            "title": "How is embarcadero mind machine simple?"
+        },
+        {
+            "location": "/about/#what-does-embarcadero-mind-machine-extend-or-do",
+            "text": "embarcadero mind machine is  extensible  to keep bots from becoming boring.\nThere are a limited number of components to extend (2), these two components\nhave a simple and clear function call order, and embarcadero mind machine tries\nto use sensible defaults.  That means we start out with bots that \"just work\" \nand we can incrementally improve, extend, override,\nor redefine behaviors to make them increasingly complex,\nwhile still abstracting away messy details.",
+            "title": "What does embarcadero mind machine extend or do?"
+        },
+        {
+            "location": "/about/#how-is-embarcadero-mind-machine-poop-y",
+            "text": "The embarcadero mind machine library makes good use of concepts in\nPython Object Oriented Programming, or POOP.  The embarcadero mind machine library uses inheritance, because the entire\nlibrary is built on base classes provided by boring mind machine.  Additionally, the whole way embarcadero mind machine works is to\nprovide a set of useful classes, but also make it easy for\nusers to write their own classes.  Everything is about classes.",
+            "title": "How is embarcadero mind machine POOP-y?"
+        },
+        {
+            "location": "/installing/",
+            "text": "Installing embarcadero mind machine\n\u00b6\n\n\nTo install embarcadero mind machine manually, use the \nnormal \nsetup.py\n procedure:\n\n\ngit clone https://github.com/rainbow-mind-machine/embarcadero-mind-machine.git\ncd embarcadero-mind-machine\npython setup.py build \npython setup.py install\n\n\n\n\n\nTo install rainbow mind machine with pip:\n\n\npip install embarcaderomindmachine\n\n\n\n\n\nRequired Packages\n\u00b6\n\n\nIf you need a list of required packages, see \nrequirements.txt\n.\nThese packages will be installed using either of the above \ninstallation methods.\n\n\nWhat You Need to Run a Bot Flock\n\u00b6\n\n\nYou will need a few additional things before you can get a bot flock\nup and running with embarcadero mind machine.\n\n\nA Bot Idea\n\u00b6\n\n\nYou will need to decide on the behaviors\nyou want the bot to have, so you know how to \nstructure the bot repository, what data to include,\nand how to extend Sheep and Shepherd.\n\n\nYou will be defining how the Sheep \n(one sheep = one bot)\nwill populate their tweet queues.\nThis may be a simple action (get an item \nfrom a list owned by the Sheep), \nor it may be a complicated one\n(make a URL request to get live data,\nquery a database, call an API, etc.).\n\n\nSee \nexample_flocks/\n.\n\n\nBot Master Account\n\u00b6\n\n\nIt's good practice to create the OAuth application \nyou'll be using to run your bot flock under a bot master account.\n\n\nLike your OAuth application, the bot master account \ncan be used to run as many bot flocks as you would like,\nso you don't need to make it flock-specific.\n\n\nThis account is also (obviously) not itself a bot,\nso you can use your personal twitter account \nas the bot master account.\n\n\nBot Accounts\n\u00b6\n\n\nembarcadero mind machine handles everything \nbut\n the creation of bot accounts. \nYou must already have created a user account for each bot.\n\n\nNo customization of the bot accounts is needed \nprior to using rainbow mind machine - \nrainbow mind machine can take care of setting\nprofile, profile color, bio, and avatar information.\n\n\nAn OAuth App\n\u00b6\n\n\nYou also need to create an OAuth application.\nYou can use one application across all of your \nbot flocks - there is no limit on the number of \naccounts a single application can control.\n\n\nIt is recommended you create this app using a \n\"bot master\" account, and not using the bot \naccounts themselves.\n\n\nThis will register your embarcadero mind machine bot flock \napplication with Github, and give you credentials \n(one token and one secret token)\nthat will allow you to connect to Github's API\nas the rainbow mind machine application that you are \nabout to build.\n\n\nWhen you register your application you will get a token\nand a secret token. These are provided to the Keymaker.\n(See \nboring mind machine\n.)",
+            "title": "Installing rmm"
+        },
+        {
+            "location": "/installing/#installing-embarcadero-mind-machine",
+            "text": "To install embarcadero mind machine manually, use the \nnormal  setup.py  procedure:  git clone https://github.com/rainbow-mind-machine/embarcadero-mind-machine.git\ncd embarcadero-mind-machine\npython setup.py build \npython setup.py install  To install rainbow mind machine with pip:  pip install embarcaderomindmachine",
+            "title": "Installing embarcadero mind machine"
+        },
+        {
+            "location": "/installing/#required-packages",
+            "text": "If you need a list of required packages, see  requirements.txt .\nThese packages will be installed using either of the above \ninstallation methods.",
+            "title": "Required Packages"
+        },
+        {
+            "location": "/installing/#what-you-need-to-run-a-bot-flock",
+            "text": "You will need a few additional things before you can get a bot flock\nup and running with embarcadero mind machine.",
+            "title": "What You Need to Run a Bot Flock"
+        },
+        {
+            "location": "/installing/#a-bot-idea",
+            "text": "You will need to decide on the behaviors\nyou want the bot to have, so you know how to \nstructure the bot repository, what data to include,\nand how to extend Sheep and Shepherd.  You will be defining how the Sheep \n(one sheep = one bot)\nwill populate their tweet queues.\nThis may be a simple action (get an item \nfrom a list owned by the Sheep), \nor it may be a complicated one\n(make a URL request to get live data,\nquery a database, call an API, etc.).  See  example_flocks/ .",
+            "title": "A Bot Idea"
+        },
+        {
+            "location": "/installing/#bot-master-account",
+            "text": "It's good practice to create the OAuth application \nyou'll be using to run your bot flock under a bot master account.  Like your OAuth application, the bot master account \ncan be used to run as many bot flocks as you would like,\nso you don't need to make it flock-specific.  This account is also (obviously) not itself a bot,\nso you can use your personal twitter account \nas the bot master account.",
+            "title": "Bot Master Account"
+        },
+        {
+            "location": "/installing/#bot-accounts",
+            "text": "embarcadero mind machine handles everything  but  the creation of bot accounts. \nYou must already have created a user account for each bot.  No customization of the bot accounts is needed \nprior to using rainbow mind machine - \nrainbow mind machine can take care of setting\nprofile, profile color, bio, and avatar information.",
+            "title": "Bot Accounts"
+        },
+        {
+            "location": "/installing/#an-oauth-app",
+            "text": "You also need to create an OAuth application.\nYou can use one application across all of your \nbot flocks - there is no limit on the number of \naccounts a single application can control.  It is recommended you create this app using a \n\"bot master\" account, and not using the bot \naccounts themselves.  This will register your embarcadero mind machine bot flock \napplication with Github, and give you credentials \n(one token and one secret token)\nthat will allow you to connect to Github's API\nas the rainbow mind machine application that you are \nabout to build.  When you register your application you will get a token\nand a secret token. These are provided to the Keymaker.\n(See  boring mind machine .)",
+            "title": "An OAuth App"
+        },
+        {
+            "location": "/quickstart/",
+            "text": "Quick Start\n\u00b6\n\n\nLet's walk through a quick example to illustrate\nhow \nembarcadero mind machine\n (emm) works.\n\n\nWe only have 3 objects we need to understand:\n\n\n\n\nThe Keymaker\n (makes/manages keys and authenticates with Twitter)\n\n\nThe Shepherd\n (runs the flock; one shepherd = one bot flock)\n\n\nThe Sheep\n (runs a bot, and defines bot's behavior; one sheep = one bot)\n\n\n\n\nKeymaker: Authentication Step\n\u00b6\n\n\nAlso see the \nKeymaker\n page.\n\n\nThe first step in embarcadero mind machine is to run the Keymaker\nto give the application permission to tweet on behalf of \neach of our bot users. This generates keys that the \nembarcadero mind machine application requires to run a bot flock.\n\n\nThe actual Keymaker objects for each service are defined in the\n\nboring mind machine\n library.\nThe usage is covered here.\n\n\nThe Keymaker takes a set of items as an input, and creates one key for each item. \n\n\nA set of items might be a Python list with integers, or a folder full of \ntext files, or a set of URLs, or just plain old string labels.\n\n\nThe keys are what allow our application to tweet using a bot account. \n\n\nWe call \nmake_a_key()\n on each item to create each key.\n\n\nThe Keymaker \nrequires\n that we specify\na \nname\n parameter to name the bot and a \njson\n parameter\nto specify the location of the key.\n\n\nAlso note, this requires that your Twitter app's \nconsumer secret and consumer token be set \nin \napikeys.py\n.\n\n\nIn the example below, the \"items\" are strings containing the bot name.\nThis uses credentials in \napikeys.py\n and outputs key files\nat \nkeys/key1.json\n and \nkeys/key2.json\n.\n\n\nimport\n \nembarcaderomindmachine\n \nas\n \nrmm\n\n\nimport\n \nsubprocess\n\n\n\nsubprocess\n.\ncall\n([\n'mkdir'\n,\n'-p'\n,\n'keys/'\n])\n\n\n\nk\n \n=\n \nrmm\n.\nGithubKeymaker\n()\n\n\nk\n.\nset_api_keys_env\n()\n\n\n\n# Create some keys\n\n\nk\n.\nmake_key\n({\n\n    \n'name'\n:\n'red bot'\n,\n          \n# This is the bot label (arbitrary)\n\n    \n'json'\n:\n'keys/red_key.json'\n \n# This is the key file\n\n\n})\n\n\nk\n.\nmake_key\n({\n\n    \n'name'\n:\n'blue bot'\n,\n\n    \n'json'\n:\n'keys/key2.json'\n\n\n})\n\n\n\n\n\n\nWhen this script is run, the Keymaker will \ngo through a series of interactive steps \nto create keys from each item.\n\n\nA Shepherd to Run the Bot Flock\n\u00b6\n\n\nAlso see the \nShepherd\n page.\n\n\nOnce that is done, make a Shepherd for the bot flock,\nand point it to the keys the Keymaker created \nin the \nkeys/\n directory:\n\n\nimport\n \nembarcaderomindmachine\n \nas\n \nrmm\n\n\n\n# make the Shepherd\n\n\nsh\n \n=\n \nrmm\n.\nGiihubShepherd\n(\n\"keys/\"\n)\n\n\n\n# Perform action in serial\n\n\nsh\n.\nperform_serial_action\n(\n'change_avatar'\n)\n\n\n\n# Perform action in parallel\n\n\nsh\n.\nperform_serial_action\n(\n'issue_argument'\n)\n\n\n\n\n\n\nCustomizing Sheep\n\u00b6\n\n\nAlso see the \nSheep\n page.\n\n\nWe didn't specify what kind of Sheep we want \nthe Shepherd to create, so the Shepherd uses\nthe default \nSheep\n class.\n\n\nTo change the behavior of your bot,\nyou can use built-in Sheep types\nor you can extend the \nSheep\n class\nto define custom behaviors. \n\n\nMore Examples\n\u00b6\n\n\nSee the \nexamples/\n directory.",
+            "title": "Quick Start"
+        },
+        {
+            "location": "/quickstart/#quick-start",
+            "text": "Let's walk through a quick example to illustrate\nhow  embarcadero mind machine  (emm) works.  We only have 3 objects we need to understand:   The Keymaker  (makes/manages keys and authenticates with Twitter)  The Shepherd  (runs the flock; one shepherd = one bot flock)  The Sheep  (runs a bot, and defines bot's behavior; one sheep = one bot)",
+            "title": "Quick Start"
+        },
+        {
+            "location": "/quickstart/#keymaker-authentication-step",
+            "text": "Also see the  Keymaker  page.  The first step in embarcadero mind machine is to run the Keymaker\nto give the application permission to tweet on behalf of \neach of our bot users. This generates keys that the \nembarcadero mind machine application requires to run a bot flock.  The actual Keymaker objects for each service are defined in the boring mind machine  library.\nThe usage is covered here.  The Keymaker takes a set of items as an input, and creates one key for each item.   A set of items might be a Python list with integers, or a folder full of \ntext files, or a set of URLs, or just plain old string labels.  The keys are what allow our application to tweet using a bot account.   We call  make_a_key()  on each item to create each key.  The Keymaker  requires  that we specify\na  name  parameter to name the bot and a  json  parameter\nto specify the location of the key.  Also note, this requires that your Twitter app's \nconsumer secret and consumer token be set \nin  apikeys.py .  In the example below, the \"items\" are strings containing the bot name.\nThis uses credentials in  apikeys.py  and outputs key files\nat  keys/key1.json  and  keys/key2.json .  import   embarcaderomindmachine   as   rmm  import   subprocess  subprocess . call ([ 'mkdir' , '-p' , 'keys/' ])  k   =   rmm . GithubKeymaker ()  k . set_api_keys_env ()  # Create some keys  k . make_key ({ \n     'name' : 'red bot' ,            # This is the bot label (arbitrary) \n     'json' : 'keys/red_key.json'   # This is the key file  })  k . make_key ({ \n     'name' : 'blue bot' , \n     'json' : 'keys/key2.json'  })   When this script is run, the Keymaker will \ngo through a series of interactive steps \nto create keys from each item.",
+            "title": "Keymaker: Authentication Step"
+        },
+        {
+            "location": "/quickstart/#a-shepherd-to-run-the-bot-flock",
+            "text": "Also see the  Shepherd  page.  Once that is done, make a Shepherd for the bot flock,\nand point it to the keys the Keymaker created \nin the  keys/  directory:  import   embarcaderomindmachine   as   rmm  # make the Shepherd  sh   =   rmm . GiihubShepherd ( \"keys/\" )  # Perform action in serial  sh . perform_serial_action ( 'change_avatar' )  # Perform action in parallel  sh . perform_serial_action ( 'issue_argument' )",
+            "title": "A Shepherd to Run the Bot Flock"
+        },
+        {
+            "location": "/quickstart/#customizing-sheep",
+            "text": "Also see the  Sheep  page.  We didn't specify what kind of Sheep we want \nthe Shepherd to create, so the Shepherd uses\nthe default  Sheep  class.  To change the behavior of your bot,\nyou can use built-in Sheep types\nor you can extend the  Sheep  class\nto define custom behaviors.",
+            "title": "Customizing Sheep"
+        },
+        {
+            "location": "/quickstart/#more-examples",
+            "text": "See the  examples/  directory.",
+            "title": "More Examples"
+        },
+        {
+            "location": "/emm_keymaker/",
             "text": "Github Keymaker\n\u00b6\n\n\nembarcadero mind machine defines a Keymaker object for authenticating\nwith the Github API via OAuth.\n\n\nA Quick One-Bot Example\n\u00b6\n\n\nHere is a quick demo to authenticate a bot account\nand create a JSON key:\n\n\nexamples/quick_start/one_bot.py\n\n\nimport embarcaderomindmachine as emm\ngk = emm.GithubKeymaker()\ngk.set_apikeys_env()\ngk.make_a_key('dummy','dummy.json','/tmp/keys')\n\n\n\n\n\nThe Github Keymaker object is what walks you through\nthe OAuth2 process.\n\n\nThe \ngk.set_apikeys_env()\n method gets the application's\nconsumer ID and consumer secret from environment\nvariables (\nCONSUMER_ID\n and \nCONSUMER_SECRET\n, \nrespectively). The Keymaker also has methods to set\nthe API keys from a JSON file or from a dictionary.\n\n\nLast, we run the \nmake_a_key()\n method to actually\ngenerate the key. Note that this is not the normal\nworkflow, we usually pass a list of items to the \nKeymaker and ask it to generate one key (i.e., \nauthenticate one bot account) per item.\n\n\nIn this case, we force the Keymaker to create a \nsingle key named \"dummy\" that will be stored in\n\n/tmp/keys/dummy.json\n.\n\n\nA Two-Bot Example\n\u00b6",
             "title": "Github Keymaker"
         },
         {
-            "location": "/keymaker/#github-keymaker",
+            "location": "/emm_keymaker/#github-keymaker",
             "text": "embarcadero mind machine defines a Keymaker object for authenticating\nwith the Github API via OAuth.",
             "title": "Github Keymaker"
         },
         {
-            "location": "/keymaker/#a-quick-one-bot-example",
+            "location": "/emm_keymaker/#a-quick-one-bot-example",
             "text": "Here is a quick demo to authenticate a bot account\nand create a JSON key:  examples/quick_start/one_bot.py  import embarcaderomindmachine as emm\ngk = emm.GithubKeymaker()\ngk.set_apikeys_env()\ngk.make_a_key('dummy','dummy.json','/tmp/keys')  The Github Keymaker object is what walks you through\nthe OAuth2 process.  The  gk.set_apikeys_env()  method gets the application's\nconsumer ID and consumer secret from environment\nvariables ( CONSUMER_ID  and  CONSUMER_SECRET , \nrespectively). The Keymaker also has methods to set\nthe API keys from a JSON file or from a dictionary.  Last, we run the  make_a_key()  method to actually\ngenerate the key. Note that this is not the normal\nworkflow, we usually pass a list of items to the \nKeymaker and ask it to generate one key (i.e., \nauthenticate one bot account) per item.  In this case, we force the Keymaker to create a \nsingle key named \"dummy\" that will be stored in /tmp/keys/dummy.json .",
             "title": "A Quick One-Bot Example"
         },
         {
-            "location": "/keymaker/#a-two-bot-example",
+            "location": "/emm_keymaker/#a-two-bot-example",
             "text": "",
             "title": "A Two-Bot Example"
         },
         {
-            "location": "/shepherd/",
-            "text": "Shepherd\n\u00b6\n\n\nThe embarcadero mind machine shepherd is not much different from \nyour typical shepherd, it's basically there to initialize the \nflock by creating one sheep per key.\n\n\nAs described in boring mind machine, any mind machine that\nwants to use the boring shepherd base class should define \ntwo methods, each taking a key:\n\n\n\n\nvalidate the key\n\n\ncreate a Sheep from the key",
+            "location": "/emm_shepherd/",
+            "text": "Shepherd\n\u00b6\n\n\nThe Shepherd is the object that loads the set of keys\nand uses them to construct Sheep objects.\n\n\nInheritance notes:\n- base class is in boring mind machine\n- boring shepherd base class calls the verify key and the create sheep method\n- virtual methods that must be implemente by us\n\n\nDerived Shepherds only need to define:\n- how to validate keys \n- how to add sheep to flock\n\n\nAs described in boring mind machine, any mind machine that\nwants to use the boring shepherd base class should define \ntwo methods, each taking a key:\n\n\n\n\nvalidate the key\n\n\ncreate a Sheep from the key",
+            "title": "Github Shepherd"
+        },
+        {
+            "location": "/emm_shepherd/#shepherd",
+            "text": "The Shepherd is the object that loads the set of keys\nand uses them to construct Sheep objects.  Inheritance notes:\n- base class is in boring mind machine\n- boring shepherd base class calls the verify key and the create sheep method\n- virtual methods that must be implemente by us  Derived Shepherds only need to define:\n- how to validate keys \n- how to add sheep to flock  As described in boring mind machine, any mind machine that\nwants to use the boring shepherd base class should define \ntwo methods, each taking a key:   validate the key  create a Sheep from the key",
             "title": "Shepherd"
         },
         {
-            "location": "/shepherd/#shepherd",
-            "text": "The embarcadero mind machine shepherd is not much different from \nyour typical shepherd, it's basically there to initialize the \nflock by creating one sheep per key.  As described in boring mind machine, any mind machine that\nwants to use the boring shepherd base class should define \ntwo methods, each taking a key:   validate the key  create a Sheep from the key",
-            "title": "Shepherd"
+            "location": "/emm_sheep/",
+            "text": "Sheep\n\u00b6\n\n\nThe sheep defined by embarcadero mind machine have a lot of flexibility, \nprimarily because of how many endpoints the Github API has.\n\n\nOur first bot example was a blame bot: two bots going back and forth \nblaming each other for an issue by re-assigning the issue to the other bot.\n\n\nOther bot flock ideas:\n\n\n\n\nbot making commits in repos\n\n\nlicense bot that looks for license files\n\n\n\n\nbe mroe generic about actions and what bots are doing\n\n\n\n\nnot just \"license bot to check for a license\"\n\n\nthat is the central action, which the bot defines how to do\n\n\nbut we want to go deeper - a given bot type can do a given action type\n\n\nwe want each bot to have a different \"take\" on the action, a different way of doing it\n\n\n\n\nembarcadero mind machine Sheep have basic functionality described by the Github API.\n\n\nIdeas:\n\n\n\n\n\n\nping pong pair - simple ping pong on an issue (no, it's your problem. :reassign:)\n\n\n\n\n\n\nfavestar bots\n\n\n\n\nto_fave = []; faved = [];",
+            "title": "Github Sheep"
         },
         {
-            "location": "/sheep/",
-            "text": "Sheep\n\u00b6\n\n\nembarcadero mind machine Sheep have basic functionality described by the Github API.\n\n\nIdeas:\n\n\n\n\n\n\nping pong pair - simple ping pong on an issue (no, it's your problem. :reassign:)\n\n\n\n\n\n\nfavestar bots\n\n\n\n\nto_fave = []; faved = [];",
+            "location": "/emm_sheep/#sheep",
+            "text": "The sheep defined by embarcadero mind machine have a lot of flexibility, \nprimarily because of how many endpoints the Github API has.  Our first bot example was a blame bot: two bots going back and forth \nblaming each other for an issue by re-assigning the issue to the other bot.  Other bot flock ideas:   bot making commits in repos  license bot that looks for license files   be mroe generic about actions and what bots are doing   not just \"license bot to check for a license\"  that is the central action, which the bot defines how to do  but we want to go deeper - a given bot type can do a given action type  we want each bot to have a different \"take\" on the action, a different way of doing it   embarcadero mind machine Sheep have basic functionality described by the Github API.  Ideas:    ping pong pair - simple ping pong on an issue (no, it's your problem. :reassign:)    favestar bots   to_fave = []; faved = [];",
             "title": "Sheep"
         },
         {
-            "location": "/sheep/#sheep",
-            "text": "embarcadero mind machine Sheep have basic functionality described by the Github API.  Ideas:    ping pong pair - simple ping pong on an issue (no, it's your problem. :reassign:)    favestar bots   to_fave = []; faved = [];",
-            "title": "Sheep"
+            "location": "/future/",
+            "text": "Future Work and Ideas\n\u00b6\n\n\n(TODO: add future work/ideas)",
+            "title": "Future Work and Ideas"
+        },
+        {
+            "location": "/future/#future-work-and-ideas",
+            "text": "(TODO: add future work/ideas)",
+            "title": "Future Work and Ideas"
+        },
+        {
+            "location": "/credits/",
+            "text": "Credits\n\u00b6\n\n\nMost of the magic in embarcadero mind machine happens via the excellent\n\nPyGithub\n library.\n\n\nAll of the artwork is original photography by the author and is available \nunder the terms of the MIT License.",
+            "title": "Credits"
+        },
+        {
+            "location": "/credits/#credits",
+            "text": "Most of the magic in embarcadero mind machine happens via the excellent PyGithub  library.  All of the artwork is original photography by the author and is available \nunder the terms of the MIT License.",
+            "title": "Credits"
+        },
+        {
+            "location": "/contributing/",
+            "text": "Contributing\n\u00b6\n\n\nWays to Contribute\n\u00b6\n\n\nSome ways that you can contribute, in order of increasing involvement:\n\n\n\n\n\n\nRead \nthe documentation\n!\n  If you find a problem or can't understand something, open an issue (see below).\n\n\n\n\n\n\nUse embarcadero mind machine! You can test it out and come up with new ideas\n  and ways of using rainbow mind machine.\n\n\n\n\n\n\nOpen an issue\n\n  in the rainbow mind machine repository on Github. The issue can be a bug,\n  a question, an idea, or anything else.\n\n\n\n\n\n\nFork embarcadero mind machine on\n  Github!",
+            "title": "Contributing"
+        },
+        {
+            "location": "/contributing/#contributing",
+            "text": "",
+            "title": "Contributing"
+        },
+        {
+            "location": "/contributing/#ways-to-contribute",
+            "text": "Some ways that you can contribute, in order of increasing involvement:    Read  the documentation !\n  If you find a problem or can't understand something, open an issue (see below).    Use embarcadero mind machine! You can test it out and come up with new ideas\n  and ways of using rainbow mind machine.    Open an issue \n  in the rainbow mind machine repository on Github. The issue can be a bug,\n  a question, an idea, or anything else.    Fork embarcadero mind machine on\n  Github!",
+            "title": "Ways to Contribute"
+        },
+        {
+            "location": "/mind-machine-docs/dev/",
+            "text": "Developer Notes\n\u00b6\n\n\nMakefiles:\n\n\n\n\nMakefile rules after first clone\n\n\nMakefile rules after fresh clone\n\n\nMakefile rules for test/deploy/docs\n\n\n\n\nPrime nubmer version system\n\n\n\n\nPrime number version system repository\n\n\nShould describe workflows and give overview of tasks\n\n\n\n\nTesting:\n\n\n\n\nUsing examples to test interactivity\n\n\nTests are mainly smoke tests\n\n\nFor complicated example, see bear/python-twitter on Github\n\n\n\n\nReleases:\n\n\n\n\nGithub releases\n\n\nPypi upload\n\n\nDockerhub (just an explanation of how it works/webhook)\n\n\n\n\nDocker:\n\n\n\n\nDeveloper considerations for docker container",
+            "title": "Developer Notes"
+        },
+        {
+            "location": "/mind-machine-docs/dev/#developer-notes",
+            "text": "Makefiles:   Makefile rules after first clone  Makefile rules after fresh clone  Makefile rules for test/deploy/docs   Prime nubmer version system   Prime number version system repository  Should describe workflows and give overview of tasks   Testing:   Using examples to test interactivity  Tests are mainly smoke tests  For complicated example, see bear/python-twitter on Github   Releases:   Github releases  Pypi upload  Dockerhub (just an explanation of how it works/webhook)   Docker:   Developer considerations for docker container",
+            "title": "Developer Notes"
         }
     ]
 }
