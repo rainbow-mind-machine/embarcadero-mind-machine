@@ -1,39 +1,93 @@
 # embarcadero-mind-machine
 
-The extensible framework for Github bot flocks.
+![subway](img/tiny1.jpg)
+
+**embarcadero mind machine** is an extensible framework for running Github bot
+flocks.
+
+**rainbow mind machine** uses the mind machine framework to provide the user
+with a simple set of building blocks for building bot flocks: a Keymaker, a
+Shepherd, and a Sheep.
+
+The philosophy is to help users get started quickly, and build on simple
+behaviors to create complex, rich bot behaviors.
 
 See [embarcadero-mind-machine in action](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/issues/1)!
 
-<img src="img/tiny1.jpg" width="500">
+
+## All the shields
+
+![latest prime number version](https://img.shields.io/badge/latest--prime--number--version-5-blue.svg)
+
+![tests-passing](https://img.shields.io/badge/tests-passing-green.svg)
+[![works on my machine](https://img.shields.io/badge/works-on_my_machine-blue.svg)](https://img.shields.io/badge/works-on_my_machine-blue.svg)
+
+[![pypi versions](https://img.shields.io/pypi/pyversions/embarcaderomindmachine.svg)](https://pypi.python.org/pypi/embarcaderomindmachine/) 
+[![PyPI version embarcaderomindmachine](https://badge.fury.io/py/embarcaderomindmachine.svg)](https://pypi.python.org/pypi/embarcaderomindmachine/)
+[![PyPI license](https://img.shields.io/pypi/l/embarcaderomindmachine.svg)](https://pypi.python.org/pypi/embarcaderomindmachine/)
+[![PyPI implementation](https://img.shields.io/pypi/implementation/embarcaderomindmachine.svg)](https://pypi.python.org/pypi/embarcaderomindmachine/)
+
+[![gh pull requests](https://img.shields.io/github/issues-pr/rainbow-mind-machine/embarcadero-mind-machine.svg)](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/pull/)
+[![gh pull requests closed](https://img.shields.io/github/issues-pr-closed/rainbow-mind-machine/rainbow-mind-machine.svg)](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/pull/)
+[![GitHub issues](https://img.shields.io/github/issues/rainbow-mind-machine/rainbow-mind-machine.svg)](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/issues/)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/rainbow-mind-machine/rainbow-mind-machine.svg)](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/rainbow-mind-machine/rainbow-mind-machine.svg)](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/pull/)
+[![GitHub pull-requests closed](https://img.shields.io/github/issues-pr-closed/rainbow-mind-machine/rainbow-mind-machine.svg)](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/pull/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+[![Website pages.charlesreid1.com](https://img.shields.io/website-up-down-green-red/https/pages.charlesreid1.com.svg)](https://pages.charlesreid1.com/embarcadero-mind-machine)
+
+[![cthulhu](https://img.shields.io/badge/Ph'nglui%20mglw'nafh%20Cthulhu%20R'lyeh%20wgah'nagl%20fhtagn-m'latgh%20gnaiih%20Nyarlathotep%20geb%20Tsathoggua%20bug-blue.svg)](https://en.wikipedia.org/wiki/Cthulhu)
+
+[![GitHub stars](https://img.shields.io/github/stars/rainbow-mind-machine/embarcadero-mind-machine.svg?style=social&label=Star&maxAge=2592000)](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/stargazers/)
+
 
 ## Links
 
-Find a link to the [embarcadero-mind-machine documentation](https://pages.charlesreid1.com/embarcadero-mind-machine) (you are here).
+embarcadero mind machine (emm) links:
 
-Find a link to [embarcadero-mind-machine on github](https://github.com/rainbow-mind-machine/embarcadero-mind-machine)
+* emm source code on Github: <https://github.com/rainbow-mind-machine/embarcadero-mind-machine>
+* emm documentation: <https://pages.charlesreid1.com/embarcadero-mind-machine>
+* rainbow mind machine organization on Github: <https://github.com/rainbow-mind-machine>
 
-Find a link to [embarcadero-mind-machine on git.charlesreid1.com](https://git.charlesreid1.com/bots/embarcadero-mind-machine).
+releases:
 
-
-## Embarcadero Mind Machine Classes
-
-This library follows the **mind machine** architecuture:
-
-* Keymaker - takes care of authentication
-* Shepherd - constructs each sheep with keys
-* Sheep - uses keys to create API instance
-
-Here are all of the classes defined in embarcadero mind machine:
-
-* [GithubKeymaker](emm_keymaker.md)
-* [Shepherd](emm_shepherd.md)
-* [Sheep](emm_sheep.md)
-
-(No Lumberjack method is needed.)
+* emm releases on Github: <https://github.com/rainbow-mind-machine/embarcadero-mind-machine/releases>
+* emm on pypi: <https://pypi.org/project/rainbowmindmachine/>
+* (TBA) emm on dockerhub: <https://hub.docker.com/r/rainbowmindmachine/embarcaderomindmachine/>
 
 
-## developer workflow
+## Pages
 
-see [boring mind machine](https://pages.charlesreid1.com/boring-mind-machine)
-for info about the infrastructure.
+[About the Mind Machine Framework](mind-machine-docs/about.md) - general
+information about the mind machine framework (how does it work? what does it
+look like?)
+
+[About Rainbow Mind Machine](about.md) - about the rainbow mind machine library
+(what is it? what does it do?)
+
+[Installing](installing.md) - installation instructions (how do I install bmm?)
+
+[Quick Start](quickstart.md) - quick start instructions for getting started
+with rainbow mind machine - run your first Twitter bot!
+
+Documentation for components implemented in rainbow mind machine:
+
+* Keymakers:
+    * [GithubKeymaker @ boring mind machine documentation](https://pages.charlesreid1.com/boring-mind-machine/bmm_keymaker_github/)
+* [emm.GithubShepherd](emm_shepherd.md)
+* [emm.GithubSheep](emm_sheep.md)
+
+
+## Developer Notes
+
+See [Developer Notes](mind-machine-docs/dev.md) for info about the 
+workflow for uploading changes to pypi and dockerhub.
+
+
+## Get In Touch
+
+Contact the author: `rainbowmindmachine@charlesreid1.com`
+
 
