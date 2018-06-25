@@ -17,13 +17,12 @@ See [embarcadero-mind-machine in action](https://github.com/rainbow-mind-machine
 
 ## All the shields
 
-![latest prime number version](https://img.shields.io/badge/latest--prime--number--version-5-blue.svg)
+![latest prime number version](https://img.shields.io/badge/latest--prime--number--version-7-blue.svg)
 
 ![tests-passing](https://img.shields.io/badge/tests-passing-green.svg)
 [![works on my machine](https://img.shields.io/badge/works-on_my_machine-blue.svg)](https://img.shields.io/badge/works-on_my_machine-green.svg)
 [![documentation at pages.charlesreid1.com](https://img.shields.io/website-up-down-green-red/https/pages.charlesreid1.com.svg)](https://pages.charlesreid1.com/embarcadero-mind-machine)
 
-[![pypi versions](https://img.shields.io/pypi/pyversions/embarcaderomindmachine.svg)](https://pypi.python.org/pypi/embarcaderomindmachine/)
 ![PyPI version embarcaderomindmachine](https://badge.fury.io/py/embarcaderomindmachine.svg)
 ![PyPI license](https://img.shields.io/pypi/l/embarcaderomindmachine.svg)
 ![PyPI implementation](https://img.shields.io/pypi/implementation/embarcaderomindmachine.svg)
