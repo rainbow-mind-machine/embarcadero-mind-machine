@@ -1,3 +1,6 @@
 [submodule "mkdocs-material"]
 	path = mkdocs-material
 	url = ssh://git@git.charlesreid1.com:222/charlesreid1/mkdocs-material.git
+[submodule "docs/mind-machine-docs"]
+	path = docs/mind-machine-docs
+	url = git@github.com:rainbow-mind-machine/mind-machine-docs.git

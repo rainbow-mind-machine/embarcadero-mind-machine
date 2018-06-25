@@ -39,6 +39,8 @@ class BlameSheep(emm.GithubSheep):
             err = "ERROR: no 'delay' specified for BlameSheep."
             raise Exception(err)
 
+        delay_time = int(kwargs['delay'])
+
         g = self.api
         blame_map = {   
             'rainbowmindmachine' : 'embarcaderomindmachine',
