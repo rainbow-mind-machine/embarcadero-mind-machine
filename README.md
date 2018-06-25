@@ -5,7 +5,7 @@
 **embarcadero mind machine** is an extensible framework for running Github bot
 flocks.
 
-**rainbow mind machine** uses the mind machine framework to provide the user
+**embarcadero mind machine** uses the mind machine framework to provide the user
 with a simple set of building blocks for building bot flocks: a Keymaker, a
 Shepherd, and a Sheep.
 
