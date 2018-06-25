@@ -10,7 +10,7 @@ python setup.py build
 python setup.py install
 ```
 
-To install rainbow mind machine with pip:
+To install embarcadero mind machine with pip:
 
 ```
 pip install embarcaderomindmachine
@@ -64,9 +64,8 @@ embarcadero mind machine handles everything _but_ the creation of bot accounts.
 You must already have created a user account for each bot.
 
 No customization of the bot accounts is needed 
-prior to using rainbow mind machine - 
-rainbow mind machine can take care of setting
-profile, profile color, bio, and avatar information.
+prior to using embarcadero mind machine.
+
 
 ## An OAuth App
 
@@ -83,7 +82,7 @@ This will register your embarcadero mind machine bot flock
 application with Github, and give you credentials 
 (one token and one secret token)
 that will allow you to connect to Github's API
-as the rainbow mind machine application that you are 
+as the mind machine application that you are 
 about to build.
 
 When you register your application you will get a token
