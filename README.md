@@ -42,6 +42,6 @@ embarcadero mind machine (emm) links:
 releases:
 
 * [emm releases on Github](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/releases)
-* [emm on pypi](https://pypi.org/project/rainbowmindmachine/)
+* [emm on pypi](https://pypi.org/project/embarcaderomindmachine/)
 * (TBA) [emm on dockerhub](https://hub.docker.com/r/rainbowmindmachine/embarcaderomindmachine/)
 
