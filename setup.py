@@ -1,6 +1,6 @@
 from setuptools import setup
 
-version = "7"
+version = "13"
 
 setup(  name='embarcaderomindmachine',
         version=version,
@@ -13,8 +13,8 @@ setup(  name='embarcaderomindmachine',
         license='MIT',
         packages=['embarcaderomindmachine'],
         install_requires=[
-                'boringmindmachine==7',
-                'PyGithub>=1.39'
+            'boringmindmachine==13',
+            'PyGithub>=1.39'
         ],
         zip_safe=False)
 
