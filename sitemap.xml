@@ -1,84 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/mind-machine-docs/about/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine</loc>
-     <lastmod></lastmod>
+     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/mind-machine-docs/keymaker/</loc>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
+    <url>
+     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/mind-machine-docs/shepherd/</loc>
+     <lastmod>2018-08-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/mind-machine-docs/sheep/</loc>
+     <lastmod>2018-08-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/about/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/installing/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/quickstart/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine</loc>
-     <lastmod></lastmod>
+     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/emm_keymaker/</loc>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
+    <url>
+     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/emm_shepherd/</loc>
+     <lastmod>2018-08-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/emm_sheep/</loc>
+     <lastmod>2018-08-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/future/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/credits/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/contributing/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
      <loc>https://pages.charlesreid1.com/embarcadero-mind-machine/mind-machine-docs/dev/</loc>
-     <lastmod>2018-06-25</lastmod>
+     <lastmod>2018-08-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
 </urlset>
