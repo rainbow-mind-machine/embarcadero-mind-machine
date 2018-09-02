@@ -4,7 +4,7 @@ repo_name: embarcadero-mind-machine
 repo_url: https://github.com/rainbow-mind-machine/embarcadero-mind-machine
 edit_uri: ""
 
-pages:
+nav:
   - 'Home': 'index.md'
 
   - 'Mind Machine Framework':
@@ -100,3 +100,6 @@ markdown_extensions:
   - toc:
       permalink: true
 
+
+
+strict: true
