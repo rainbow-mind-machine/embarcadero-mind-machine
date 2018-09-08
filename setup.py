@@ -1,6 +1,6 @@
 from setuptools import setup
 
-version = "13"
+version = "23"
 
 setup(  name='embarcaderomindmachine',
         version=version,

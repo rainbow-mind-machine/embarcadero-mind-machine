@@ -5,4 +5,6 @@ RUN git clone -b prereleases/v23 https://github.com/rainbow-mind-machine/embarca
 RUN cd /emm && \
     /usr/bin/env pip install -r requirements.txt && \
     /usr/bin/env python /emm/setup.py build && \
-    /usr/bin/env python /emm/setup.py install
+    /usr/bin/env python /emm/setup.py install && \
+    /usr/bin/env python /emm/setup.py test
+
