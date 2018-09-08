@@ -14,6 +14,7 @@ setup(  name='embarcaderomindmachine',
         packages=['embarcaderomindmachine'],
         install_requires=[
             'boringmindmachine',
+            'requests_oauthlib>=1.0',
             'PyGithub>=1.39'
         ],
         zip_safe=False)
