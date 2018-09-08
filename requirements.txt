@@ -1,1 +1,4 @@
+boringmindmachine==23
 PyGithub>=1.39
+requests_oauthlib>=1.0
+mkdocs>=1.0

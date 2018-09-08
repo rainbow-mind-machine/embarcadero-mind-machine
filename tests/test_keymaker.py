@@ -19,7 +19,7 @@ class TestGithubKeymaker_init(TestCase):
     token_var = 'client_id'
     secret_var = 'client_secret'
     keys_dir = tempfile.gettempdir() # gets an already-existing dir
-    keys_json = "apikeys.json"
+    keys_json = "apikeys_fake.json"
 
     @classmethod
     def setUpClass(self):

@@ -16,21 +16,26 @@ nav:
 
   - 'Embarcadero Mind Machine':
     - 'About emm':   'about.md'
-    - 'Installing rmm': 'installing.md'
+    - 'Installing emm': 'installing.md'
     - 'Quick Start': 'quickstart.md'
+    - 'Github Guide': 'emm_github.md'
     - 'Embarcadero Mind Machine Components':
       - 'Github Keymaker' : 'emm_keymaker.md'
       - 'Github Shepherd' : 'emm_shepherd.md'
       - 'Github Sheep' : 'emm_sheep.md'
     - 'Future Work and Ideas' : 'future.md'
-    - 'Credits' : 'credits.md'
 
   - 'Mind Machine Developers':
-    - 'Contributing' : 'contributing.md'
     - 'Developer Notes' : 'mind-machine-docs/dev.md'
 
+  - 'Contributing' : 'contributing.md'
+  - 'Credits' : 'mind-machine-docs/credits.md'
 
-copyright: 'Copyright &copy; 2018 <a href="https://charlesreid1.com">Charles Reid</a>, released under the <a href="https://opensource.org/licenses/MIT">MIT License</a>. rainbowmindmachine@charlesreid1.com<br />Photo Credits: <a href="/boring-mind-machine/credits/">Russ Loar, Charles Reid</a> (CC).
+
+copyright: 'All mind machines are copyright &copy; 2018 <a href="https://charlesreid1.com">Charles Reid</a><br />
+  All mind machines are released under the <a href="https://opensource.org/licenses/MIT">MIT License</a><br />
+  Contact us: <a href="mailto:embarcaderomindmachine@charlesreid1.com">embarcaderomindmachine(at) charlesreid1.com</a><br />
+  <a href="mind-machine-docs/credits/">Photo credits and attribution</a><br />
   <div class="classictemplate template" style="display: block;">
     <style type="text/css"> \
       #groupsio_embed_signup input {border:1px solid #999; -webkit-appearance:none;} \
@@ -99,7 +104,5 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
-
-
 
 strict: true
