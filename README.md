@@ -32,15 +32,13 @@ See [embarcadero-mind-machine in action](https://github.com/rainbow-mind-machine
 
 ## Links
 
-embarcadero mind machine (emm) links:
-
-* [emm source code on Github](https://github.com/rainbow-mind-machine/embarcadero-mind-machine)
-* [emm documentation](https://pages.charlesreid1.com/embarcadero-mind-machine)
-* [rainbow mind machine organization on Github](https://github.com/rainbow-mind-machine)
+* emm source code on Github: <https://github.com/rainbow-mind-machine/embarcadero-mind-machine>
+* emm documentation: <https://pages.charlesreid1.com/embarcadero-mind-machine>
+* rainbow mind machine organization on Github: <https://github.com/rainbow-mind-machine>
 
 releases:
 
-* [emm releases on Github](https://github.com/rainbow-mind-machine/embarcadero-mind-machine/releases)
-* [emm on pypi](https://pypi.org/project/embarcaderomindmachine/)
-* (TBA) [emm on dockerhub](https://hub.docker.com/r/rainbowmindmachine/embarcaderomindmachine/)
+* emm releases on Github: <https://github.com/rainbow-mind-machine/embarcadero-mind-machine/releases>
+* emm on pypi: <https://pypi.org/project/embarcaderomindmachine/>
+* emm on dockerhub: <https://hub.docker.com/r/rainbowmindmachine/embarcaderomindmachine/>
 
