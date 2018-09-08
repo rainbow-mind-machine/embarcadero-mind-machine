@@ -13,7 +13,7 @@ setup(  name='embarcaderomindmachine',
         license='MIT',
         packages=['embarcaderomindmachine'],
         install_requires=[
-            'boringmindmachine==13',
+            'boringmindmachine',
             'PyGithub>=1.39'
         ],
         zip_safe=False)
