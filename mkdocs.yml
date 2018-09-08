@@ -18,7 +18,7 @@ nav:
     - 'About emm':   'about.md'
     - 'Installing rmm': 'installing.md'
     - 'Quick Start': 'quickstart.md'
-    - 'Github Guide': 'github.md'
+    - 'Github Guide': 'emm_github.md'
     - 'Embarcadero Mind Machine Components':
       - 'Github Keymaker' : 'emm_keymaker.md'
       - 'Github Shepherd' : 'emm_shepherd.md'
