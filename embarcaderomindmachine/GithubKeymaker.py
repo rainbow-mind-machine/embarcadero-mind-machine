@@ -1,4 +1,4 @@
-from bmm import BoringOAuthKeymaker
+import boringmindmachine as bmm
 import os, re, json
 import tempfile, subprocess
 from github import Github
@@ -7,7 +7,7 @@ import urllib3
 urllib3.disable_warnings()
 
 
-class GithubKeymaker(BoringOAuthKeymaker):
+class GithubKeymaker(bmm.BoringOAuthKeymaker):
     """
     Do the OAuth dance with Github.
     """
